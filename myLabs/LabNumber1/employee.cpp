@@ -5,7 +5,7 @@ void switchTypeProfession (employeeType employee)
     switch (employee)
     {
         case PROGRAMMER:
-            std::cout << "\t\tProgrammer";
+            std::cout << "\t\t\tProgrammer";
             break;
         case DOCTOR:
             std::cout << "\t\t\tDoctor";
@@ -23,7 +23,7 @@ void switchTypeProfession (employeeType employee)
             std::cout << "\t\t\tPriest";
             break;
         default:
-            std::cout << "Неизвестный";
+            std::cout << "\t\t\tНеизвестный";
             break;
     }
 }
@@ -35,12 +35,12 @@ Employee::Date::Date(int day, int month, int year)
     m_year = year;
 }
 
-Employee::Employee(int numberOfEmployee, float salary, Date date, employeeType currentEmployee)
+Employee::Employee(float salary, Date date, employeeType currentEmployee)
 {
-    numberOfEmployee = numberOfEmployee;
     salary = salary;
     date = date;
     currentEmployee = currentEmployee;
+    numberOfEmployee = ++counter;
 }
 
 void Employee::Date::setDay(int day)
@@ -58,44 +58,44 @@ void Employee::Date::setYear(int year)
 
 
 
-void Employee::getEmployee(int numberOfEmp)
+void Employee::getEmployee()
 {
     std::cout << "Введите число даты\n";
-    date.setDay(checkDay(inputNumber<int>()));
+    date.setDay((inputNumber<int>(1, 31)));
     std::cout << "Введите месяц\n";
-    date.setMonth(checkMonth(inputNumber<int>()));
+    date.setMonth((inputNumber<int>(1, 12)));
     std::cout << "Введите год\n";
-    date.setYear(checkYear((inputNumber<int>())));
+    date.setYear(((inputNumber<int>(1000, 3000))));
 
     std::cout << "Введите заработную плату\n";
-    salary = inputNumber<float>();
+    salary = inputNumber<float>(0.0, 1000000.0);
     std::cout << "Введите тип профессии\n";
     std::cout << "\n1 - программист" << "\n2 - врач" << "\n3 - банкир" << "\n4 - юрист" << "\n5 - учитель" << "\n6 - священник";
-    int typeProfession = inputNumber<int>();
+    int typeProfession = inputNumber<int>(0, countEmployeeType);
     m_currentEmployee = static_cast<employeeType>(typeProfession);
-
-    numberOfEmployee = numberOfEmp;
+    numberOfEmployee = ++counter;
 }
 
-void Employee::putEmployee(int numOfEmployee)
+void Employee::putEmployee()
 {
-    std::cout << "Информация о сотруднике №" << numOfEmployee << ":\n";
-    std::cout << "Дата приема на работу: " << date.getDay() << "/" << date.getMonth() << "/" << date.getYear() << std::endl;
-    std::cout << "Заработная плата: " << salary << " рублей";
-    std::cout << "Должность: ";
+    std::cout << "\nИнформация о сотруднике №" << numberOfEmployee << ":\n";
+    std::cout << "Дата приема на работу: \t" << date.getDay() << "/" << date.getMonth() << "/" << date.getYear() << std::endl;
+    std::cout << "Заработная плата: \t" << salary << " рублей";
+    std::cout << "\nДолжность: ";
     switchTypeProfession(m_currentEmployee);
 }
 
 
 template <typename T>
-T inputNumber ()
+T inputNumber (T a, T b)
 {
     while (true)
     {
         T x;
         std::cin >> x;
-        if (std::cin.fail())
+        if (std::cin.fail() || x < a || x > b)
         {
+            std::cout << "Ошибка ввода числа\n";
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
@@ -106,37 +106,6 @@ T inputNumber ()
         }
     }
 }
-
-int checkDay(int day)
-{
-    while(day < 1 || day > 31)
-    {
-        std::cout << "Ошибка, день должен быть в границах от 1 до 31, введите день: ";
-        day = inputNumber<int>();
-    }
-    return day;
-}
-
-int checkMonth(int month)
-{
-    while(month < 1 || month > 12)
-    {
-        std::cout << "Ошибка, месяц должен быть в границах от 1 до 12, введите месяц: ";
-        month = inputNumber<int>();
-    }
-    return month;
-}
-
-int checkYear(int year)
-{
-    while(year < 1000 || year > 3000)
-    {
-        std::cout << "Ошибка, год должен быть в границах от 1000 до 3000, введите год: ";
-        year = inputNumber<int>();
-    }
-    return year;
-}
-
 
 
 void printEmployeeTable(std::vector<Employee> employees)

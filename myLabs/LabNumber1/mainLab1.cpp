@@ -1,40 +1,36 @@
-#include <iostream>
-#include <iomanip>
-#include <vector>
 #include "employee.h"
 
-
+int Employee::counter = 0;
 
 int main()
 {
     std::vector<Employee> employees;
-    Employee newEmployee;
-    int command = inputNumber<int>();
     while(true)
     {
-        std::cout << "Выберите команду\n" << "1 - Добавить информацию о сотруднике\n"
+        Employee newEmployee;
+        std::cout << "\nВыберите команду\n" << "1 - Добавить информацию о сотруднике\n"
                   << "2 - Вывести информацию о сотруднике по ID\n"
-                  << "3 - Вывести информацию о всех сотрудниках в виде таблицы\n";
+                  << "3 - Вывести информацию о всех сотрудниках в виде таблицы\n"
+                  << "4 - Завершить программу\n";
+        int command = inputNumber<int>(1, 4);
         switch (command)
         {
             case 1:
-                newEmployee.getEmployee((int) employees.size() + 1);
+                newEmployee.getEmployee();
                 employees.push_back(newEmployee);
                 break;
             case 2:
                 int workerID;
                 std::cout << "Введите номер ID сотрудника - "; std:: cin >> workerID;
-
-
+                employees[workerID - 1].putEmployee();
                 break;
             case 3:
+                printEmployeeTable(employees);
                 break;
             case 4:
-                return 1;
+                return 0;
             default:
                 std::cout << "Неизвестная команда";
         }
     }
-
-    return 0;
 }
