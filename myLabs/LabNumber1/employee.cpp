@@ -1,33 +1,6 @@
 #include "employee.h"
 
-void switchTypeProfession (employeeType employee)
-{
-    switch (employee)
-    {
-        case PROGRAMMER:
-            std::cout << "\t\t\tProgrammer";
-            break;
-        case DOCTOR:
-            std::cout << "\t\t\tDoctor";
-            break;
-        case BANKER:
-            std::cout << "\t\t\ttBanker";
-            break;
-        case LAWYER:
-            std::cout << "\t\t\tLawyer";
-            break;
-        case TEACHER:
-            std::cout << "\t\t\tTeacher";
-            break;
-        case PRIEST:
-            std::cout << "\t\t\tPriest";
-            break;
-        default:
-            std::cout << "\t\t\tНеизвестный";
-            break;
-    }
-}
-
+//конструктор с параметрами для установления даты
 Employee::Date::Date(int day, int month, int year)
 {
     m_day = day;
@@ -35,6 +8,9 @@ Employee::Date::Date(int day, int month, int year)
     m_year = year;
 }
 
+
+
+//конструктор с параметрами
 Employee::Employee(float salary, Date date, employeeType currentEmployee)
 {
     salary = salary;
@@ -43,6 +19,9 @@ Employee::Employee(float salary, Date date, employeeType currentEmployee)
     numberOfEmployee = ++counter;
 }
 
+
+
+//методы для установления даты
 void Employee::Date::setDay(int day)
 {
     m_day = day;
@@ -58,6 +37,7 @@ void Employee::Date::setYear(int year)
 
 
 
+//метод для ввода информации о сотруднике
 void Employee::getEmployee()
 {
     std::cout << "Введите число даты\n";
@@ -76,6 +56,9 @@ void Employee::getEmployee()
     numberOfEmployee = ++counter;
 }
 
+
+
+//метод для получения информации о сотруднике
 void Employee::putEmployee()
 {
     std::cout << "\nИнформация о сотруднике №" << numberOfEmployee << ":\n";
@@ -86,6 +69,8 @@ void Employee::putEmployee()
 }
 
 
+
+//шаблонная функция для ввода числа с проверкой
 template <typename T>
 T inputNumber (T a, T b)
 {
@@ -93,11 +78,11 @@ T inputNumber (T a, T b)
     {
         T x;
         std::cin >> x;
-        if (std::cin.fail() || x < a || x > b)
+        if (std::cin.fail() || x < a || x > b)                                                                          //если предыдущее извлечение не удалось
         {
             std::cout << "Ошибка ввода числа\n";
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cin.clear();                                                                                           //возвращаем в нормальный режим
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');                                 //очистка всех символов до \n
         }
         else
         {
@@ -108,6 +93,8 @@ T inputNumber (T a, T b)
 }
 
 
+
+//дружественная функция для вывода информации о сотрудниках в виде таблицы
 void printEmployeeTable(std::vector<Employee> employees)
 {
     std::cout << std::left
@@ -127,5 +114,103 @@ void printEmployeeTable(std::vector<Employee> employees)
         switchTypeProfession(employees[i].m_currentEmployee);
         std::cout << std::endl;
         std::cout << std::setfill('-') << std::setw(80) << "" << std::setfill(' ') << std::endl;
+    }
+}
+
+
+
+//метод для записи объекта в файл
+void Employee::writeToFile(std::ofstream& outputFile) const
+{
+    outputFile << numberOfEmployee << "\n";
+    outputFile << salary << "\n";
+    outputFile << m_currentEmployee << "\n";
+    outputFile << date.getDay() << " " << date.getMonth() << " " << date.getYear() << "\n";
+}
+
+
+
+//метод для чтения данных в объект
+void Employee::readFromFile(std::ifstream& inputFile)
+{
+    int employeeTypeValue, day, month, year;
+    inputFile >> numberOfEmployee;
+    inputFile >> salary;
+    inputFile >> employeeTypeValue;
+    m_currentEmployee = static_cast<employeeType>(employeeTypeValue);
+    inputFile >> day >> month >> year;
+    date.setDay(day);
+    date.setMonth(month);
+    date.setYear(year);
+    counter++;
+}
+
+
+
+//функция записи данных в файл
+void writeTextFile(std::vector<Employee>& employees)
+{
+    std::string fileName;
+    std::cout << "Введите имя файла - "; std::cin >> fileName;
+    std::ofstream outputFile(fileName.c_str());
+    if (!outputFile.is_open()) { std::cerr << "Не удалось открыть файл для записи" << std::endl; exit(EXIT_FAILURE);}
+    outputFile << employees.size() << "\n";
+    for (const Employee& employee : employees)
+    {
+        employee.writeToFile(outputFile);
+    }
+
+    outputFile.close();
+}
+
+
+
+//функция чтения данных из файла
+std::vector<Employee> readTextFile()
+{
+    std::string fileName; std::cout << "Введите имя файла - "; std::cin >> fileName;
+    std::vector<Employee> employees;
+    std::ifstream inputFile(fileName.c_str());
+    if (!inputFile.is_open()) { std::cerr << "Не удалось открыть файл для чтения" << std::endl; exit(EXIT_FAILURE);}
+    int n; inputFile >> n;
+    Employee employee;
+    for(int i = 0; i < n; i++)
+    {
+        employee.readFromFile(inputFile);
+        employees.push_back(employee);
+    }
+
+    inputFile.close();
+    return employees;
+}
+
+
+
+//свитч кейс для вывода названия профессии
+void switchTypeProfession (employeeType employee)
+{
+    switch (employee)
+    {
+        case PROGRAMMER:
+            std::cout << "\t\t\tProgrammer";
+            break;
+        case DOCTOR:
+            std::cout << "\t\t\tDoctor";
+            break;
+        case BANKER:
+            std::cout << "\t\t\tBanker";
+            break;
+        case LAWYER:
+            std::cout << "\t\t\tLawyer";
+            break;
+        case TEACHER:
+            std::cout << "\t\t\tTeacher";
+            break;
+        case PRIEST:
+            std::cout << "\t\t\tPriest";
+            break;
+        default:
+            std::cout << "\t\t\tНеизвестный";
+            break;
     }
 }
