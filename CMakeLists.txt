@@ -8,3 +8,7 @@ add_executable(LabNumber1
         "myLabs/LabNumber1/employee.cpp"
         "myLabs/LabNumber1/employee.h")
 
+add_executable(LeetCode
+        "LeetCode/mainLeetCode.cpp"
+        "LeetCode/functionsLeetCode.cpp"
+        "LeetCode/headerLeetCode.h")

@@ -59,7 +59,7 @@ public:
     [[nodiscard]] float getSalary() const {return salary;}                                                              //узнать заработную плату
     friend void printEmployeeTable(std::vector<Employee> employees);                                                    //вывести данные в виде таблицы
 };
-int Employee::counter = 0;                                                                                              //статическая переменная - счетчик кол-ва работников
+                                                                                            //статическая переменная - счетчик кол-ва работников
 
 template <typename T> T inputNumber (T a, T b);                                                                         //шаблонная функция ввода числа
 void writeTextFile(std::vector<Employee>& employees);                                                                   //функция записи вектора объектов в файл
