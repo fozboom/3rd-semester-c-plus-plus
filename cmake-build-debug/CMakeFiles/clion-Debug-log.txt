@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/untitled" -B "/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/untitled/cmake-build-debug"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs" -B "/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/untitled/cmake-build-debug
+-- Build files have been written to: /Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug

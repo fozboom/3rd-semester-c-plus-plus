@@ -16,14 +16,15 @@ int main()
     std::vector<Employee> employees;                                                                                    //вектор в котором хранятся объекты
     while(true)
     {
-        Employee newEmployee;                                                                                           //объект, который будет добавляться в вектор
+        Employee newEmployee, totalSalary;                                                                                           //объект, который будет добавляться в вектор
         std::cout << "\nВыберите команду\n" << "1 - Добавить информацию о сотруднике\n"
                   << "2 - Вывести информацию о сотруднике по ID\n"
                   << "3 - Вывести информацию о всех сотрудниках в виде таблицы\n"
                   << "4 - Записать информацию в текстовый файл\n"
                   << "5 - Считать информацию из текстового файла\n"
-                  << "6 - Завершить программу\n";
-        int command = inputNumber<int>(1, 6);                                                                     //ввод типа команды
+                  << "6 - посчитать зарплату двух работников\n"
+                  << "7 - сравнить тип профессии\n";
+        int command = inputNumber<int>(1, 8), ID1, ID2;;                                                                     //ввод типа команды
         switch (command)
         {
             case 1:
@@ -45,6 +46,22 @@ int main()
                 employees = readTextFile();                                                                             //чтение данных из текстового файла
                 break;
             case 6:
+                std::cout << "Введите ID сотрудников, зарплату которых надо сложить:\n";
+                ID1 = inputNumber(0, static_cast<int>(employees.size()));
+                ID2 = inputNumber(0, static_cast<int>(employees.size()));
+                totalSalary = employees[ID1 - 1] + employees[ID2 - 1];
+                std::cout << "Сумма зарплат: " << totalSalary.getSalary();
+                break;
+            case 7:
+                std::cout << "Введите ID сотрудников, профессии которых надо сравнить:\n";
+                ID1 = inputNumber(0, static_cast<int>(employees.size()));
+                ID2 = inputNumber(0, static_cast<int>(employees.size()));
+                if (employees[ID1 - 1] & employees[ID2 - 1])
+                    std::cout << "У работников одинаковые профессии";
+                else
+                    std::cout << "У работников разные профессии";
+                break;
+            case 1000:
                 return 0;                                                                                               //завершение программы
             default:
                 std::cout << "Неизвестная команда";

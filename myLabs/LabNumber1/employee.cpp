@@ -214,3 +214,29 @@ void switchTypeProfession (employeeType employee)
             break;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////Перегрузка операторов и функций//////////////////////////////////////////////
+
+Employee operator+ (const Employee &person1, const Employee &person2)
+{
+    return Employee(person1.getSalary() + person2.getSalary());
+}
+
+bool operator& (const Employee &person1, const Employee &person2)
+{
+    if (person1.getTypeEmployee() == person2.getTypeEmployee())
+        return true;
+    return false;
+}
