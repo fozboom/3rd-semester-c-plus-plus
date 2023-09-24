@@ -61,6 +61,12 @@ build CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/employee.cpp.o: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles/LabNumber1.dir
   OBJECT_FILE_DIR = CMakeFiles/LabNumber1.dir/myLabs/LabNumber1
 
+build CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o: CXX_COMPILER__LabNumber1_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber2$ $:$ Mystring/Mystring.cpp || cmake_object_order_depends_target_LabNumber1
+  DEP_FILE = CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber1.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LabNumber1
@@ -69,13 +75,50 @@ build CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/employee.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable LabNumber1
 
-build LabNumber1: CXX_EXECUTABLE_LINKER__LabNumber1_Debug CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/mainLab1.cpp.o CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/employee.cpp.o
+build LabNumber1: CXX_EXECUTABLE_LINKER__LabNumber1_Debug CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/mainLab1.cpp.o CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/employee.cpp.o CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/LabNumber1.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = LabNumber1
   TARGET_PDB = LabNumber1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LabNumber2
+
+
+#############################################
+# Order-only phony target for LabNumber2
+
+build cmake_object_order_depends_target_LabNumber2: phony || CMakeFiles/LabNumber2.dir
+
+build CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/mainLab2.cpp.o: CXX_COMPILER__LabNumber2_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber2$ $:$ Mystring/mainLab2.cpp || cmake_object_order_depends_target_LabNumber2
+  DEP_FILE = CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/mainLab2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring
+
+build CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o: CXX_COMPILER__LabNumber2_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber2$ $:$ Mystring/Mystring.cpp || cmake_object_order_depends_target_LabNumber2
+  DEP_FILE = CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LabNumber2
+
+
+#############################################
+# Link the executable LabNumber2
+
+build LabNumber2: CXX_EXECUTABLE_LINKER__LabNumber2_Debug CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/mainLab2.cpp.o CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
+  OBJECT_DIR = CMakeFiles/LabNumber2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = LabNumber2
+  TARGET_PDB = LabNumber2.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target LeetCode
@@ -148,7 +191,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug
 
-build all: phony LabNumber1 LeetCode
+build all: phony LabNumber1 LabNumber2 LeetCode
 
 # =============================================================================
 # Built-in targets

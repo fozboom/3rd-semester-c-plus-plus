@@ -22,9 +22,11 @@ int main()
                   << "3 - Вывести информацию о всех сотрудниках в виде таблицы\n"
                   << "4 - Записать информацию в текстовый файл\n"
                   << "5 - Считать информацию из текстового файла\n"
-                  << "6 - посчитать зарплату двух работников\n"
-                  << "7 - сравнить тип профессии\n";
-        int command = inputNumber<int>(1, 8), ID1, ID2;;                                                                     //ввод типа команды
+                  << "6 - Увеличить зарплату работнику\n"
+                  << "7 - Уменьшить зарплату работнику\n"
+                  << "8 - сравнить тип профессии\n";
+        int command = inputNumber<int>(1, 8), ID1, ID2, ID;                                                                     //ввод типа команды
+        float plusSalary;
         switch (command)
         {
             case 1:
@@ -46,13 +48,22 @@ int main()
                 employees = readTextFile();                                                                             //чтение данных из текстового файла
                 break;
             case 6:
-                std::cout << "Введите ID сотрудников, зарплату которых надо сложить:\n";
-                ID1 = inputNumber(0, static_cast<int>(employees.size()));
-                ID2 = inputNumber(0, static_cast<int>(employees.size()));
-                totalSalary = employees[ID1 - 1] + employees[ID2 - 1];
-                std::cout << "Сумма зарплат: " << totalSalary.getSalary();
+                std::cout << "Введите ID сотрудников, которому надо увеличить зарплату:\n";
+                ID = inputNumber(0, static_cast<int>(employees.size()));
+                std::cout << "Введите, на какую сумму увеличить зарплату:\n";
+                plusSalary = inputNumber<float>(0.0, 10000.0);
+                employees[ID - 1] = employees[ID - 1] + plusSalary;
+                std::cout << "Новая зарплата: " << employees[ID - 1].getSalary();
                 break;
             case 7:
+                std::cout << "Введите ID сотрудников, которому надо уменьшить зарплату:\n";
+                ID = inputNumber(0, static_cast<int>(employees.size()));
+                std::cout << "Введите, на какую сумму уменьшить зарплату:\n";
+                plusSalary = inputNumber<float>(0.0,   employees[ID-1].getSalary());
+                employees[ID - 1] = employees[ID - 1] - plusSalary;
+                std::cout << "Новая зарплата: " << employees[ID - 1].getSalary();
+                break;
+            case 8:
                 std::cout << "Введите ID сотрудников, профессии которых надо сравнить:\n";
                 ID1 = inputNumber(0, static_cast<int>(employees.size()));
                 ID2 = inputNumber(0, static_cast<int>(employees.size()));

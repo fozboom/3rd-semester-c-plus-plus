@@ -13,9 +13,9 @@ Employee::Date::Date(int day, int month, int year)
 //конструктор с параметрами
 Employee::Employee(float salary, Date date, employeeType currentEmployee)
 {
-    salary = salary;
-    date = date;
-    currentEmployee = currentEmployee;
+    this->salary = salary;
+    this->date = date;
+    this->m_currentEmployee = currentEmployee;
     numberOfEmployee = ++counter;
 }
 
@@ -233,6 +233,26 @@ Employee operator+ (const Employee &person1, const Employee &person2)
 {
     return Employee(person1.getSalary() + person2.getSalary());
 }
+
+Employee operator+ (const Employee &person, float salary)
+{
+    Employee::Date data(person.date.getDay(),person.date.getMonth(),person.date.getYear());
+    return Employee(person.getSalary() + salary, data, person.getTypeEmployee());
+
+}
+
+Employee operator+ (float salary, const Employee &person)
+{
+    return Employee(salary + person.getSalary());
+}
+
+
+Employee operator- (const Employee &person, float salary)
+{
+    Employee::Date data(person.date.getDay(),person.date.getMonth(),person.date.getYear());
+    return Employee(person.getSalary() - salary, data, person.getTypeEmployee());
+}
+
 
 bool operator& (const Employee &person1, const Employee &person2)
 {
