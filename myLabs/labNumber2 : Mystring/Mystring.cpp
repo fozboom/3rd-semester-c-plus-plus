@@ -1,5 +1,6 @@
 #include "Mystring.h"
 
+//вычисление длины строки
 int myStrlen(const char *str)
 {
     int i = 0;
@@ -8,6 +9,7 @@ int myStrlen(const char *str)
     return i;
 }
 
+//функция сравнения строк
 [[maybe_unused]] int myStrcmp (const char * str1, const char * str2)
 {
     while (*str1 && *str2 && (*str1 == *str2))
@@ -18,7 +20,7 @@ int myStrlen(const char *str)
     return *str1 - *str2;
 }
 
-
+//функция копирования строки
 void myStrcpy (char ** str1, const char * str2)
 {
     if (*str1 != nullptr)
@@ -34,6 +36,7 @@ void myStrcpy (char ** str1, const char * str2)
     *(*str1 + i) = '\0';
 }
 
+//функция добавления строки в конец текущей
 void myStrcat (char ** str1, const char * str2)
 {
     int size1 = myStrlen(*str1), size2 = myStrlen(str2), size = size1 + size2 + 1;
@@ -67,6 +70,7 @@ Mystring::~Mystring()
     delete[] str;
 }
 
+//перегрузка оператора =
 Mystring& Mystring::operator=(const Mystring &other)
 {
     delete[] this->str;
@@ -75,6 +79,7 @@ Mystring& Mystring::operator=(const Mystring &other)
     return *this;
 }
 
+//перегрузка оператора +
 Mystring operator+(const Mystring &object1, const Mystring &object2)
 {
     char* result = nullptr;
@@ -85,26 +90,26 @@ Mystring operator+(const Mystring &object1, const Mystring &object2)
     return Result;
 }
 
-
+//перегрузка оператора +=
 Mystring& Mystring::operator+=(const Mystring &other)
 {
    *this = *this + other;
    return *this;
 }
 
-
-
+//перегрузка оператора ==
 bool operator == (const Mystring &object1,const Mystring &object2)
 {
     return (myStrcmp(object1.getStr(), object2.getStr()) == 0);
 }
 
+//перегрузка оператора !=
 bool operator != (const Mystring &object1,const Mystring &object2)
 {
     return (myStrcmp(object1.getStr(), object2.getStr()) != 0);
 }
 
-
+//перегрузка оператора <<
 std::ostream& operator<< (std::ostream& out, const Mystring &object)
 {
     out << object.getStr();
@@ -120,34 +125,44 @@ void Mystring::print()
     std::cout << str << std::endl;
 }
 
+//перегрузка оператора []
 char& Mystring::operator[](int index)
 {
     return this->str[index];
 }
 
-void Mystring::operator()(int first, int last)
+//перегрузка оператора ()
+char* Mystring::operator()(int first, int last)
 {
+    char *result = new char[last - first + 2];
+    int j = 0;
     for (int i = first; i <= last; i++)
     {
+        result[j++] = str[i];
         std::cout << str[i];
     }
+    return result;
 }
 
+//конструктор копирования
 Mystring::Mystring(const Mystring &object)
 {
     this->str = new char [myStrlen(object.getStr())];
     myStrcpy(&this->str, object.getStr());
 }
 
+//метод ввода строки
 void Mystring::inputStr()
 {
     const int SIZE = 80;
     char* buf = new char [SIZE];
-    std::cout << "Введите строку - ";
-    std::cin >> buf;
+    std::cout << "Введите строку - " << std::endl;
+    rewind(stdin);
+    std::cin.getline(buf, SIZE);
     myStrcpy(&this->str, buf);
 }
 
+//метод для реверса части строки
 void Mystring::reverse(int i, int j)
 {
     if (i >= j)
@@ -162,6 +177,7 @@ void Mystring::reverse(int i, int j)
     }
 }
 
+//метод для реверса всей строки
 void Mystring::reverse()
 {
     int i = 0, j = myStrlen(this->str) - 1;
@@ -175,6 +191,7 @@ void Mystring::reverse()
     }
 }
 
+//метод для приведения всех символов к нижнему регистру
 void Mystring::toLower()
 {
     for(int i = 0; i < myStrlen(str); i++)
@@ -186,6 +203,7 @@ void Mystring::toLower()
     }
 }
 
+//метод для приведения всех символов к верхнему регистру
 void Mystring::toCaps()
 {
     for(int i = 0; i < myStrlen(str); i++)
@@ -197,4 +215,25 @@ void Mystring::toCaps()
     }
 }
 
+//шаблонная функция для ввода числа с проверкой
+template <typename T>
+T inputNumber (T a, T b)
+{
+    while (true)
+    {
+        T x;
+        std::cin >> x;
+        if (std::cin.fail() || x < a || x > b)                                                                          //если предыдущее извлечение не удалось
+        {
+            std::cout << "Ошибка ввода числа\n";
+            std::cin.clear();                                                                                           //возвращаем в нормальный режим
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');                                 //очистка всех символов до \n
+        }
+        else
+        {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            return x;
+        }
+    }
+}
 
