@@ -101,3 +101,65 @@ void myStrcat (char ** str1, const char * str2)
         *(*str1 + i++) = str2[j];
     *(*str1 + i) = '\0';
 }
+
+operatingSystem choiceSystem ()
+{
+    std::cout << "\nВыберите тип операционной системы:"
+              << "\n1 - Windows"
+              << "\n2 - MasOS"
+              << "\n3 - Linux"
+              << "\n4 - Android"
+              << "\n5 - IOS";
+    int x = inputNumber(0, 5);
+    operatingSystem system;
+    switch (x)
+    {
+        case 1:
+            system = Windows;
+            break;
+        case 2:
+            system = MacOS;
+            break;
+        case 3:
+            system = Linux;
+            break;
+        case 4:
+            system = Android;
+            break;
+        case 5:
+            system = IOS;
+            break;
+        default:
+            system = noname;
+            std::cout << "\nОшибка в switch case";
+            break;
+    }
+    return system;
+}
+
+chargingType choicePower()
+{
+    std::cout << "\nВыберите тип зарядки:"
+              << "\n1 - USB-C"
+              << "\n2 - microUSB"
+              << "\n3 - Lightning";
+    int choice = inputNumber(1, 3);
+    chargingType power;
+    switch (choice)
+    {
+        case 1:
+            power = USB_C;
+            break;
+        case 2:
+            power = microUSB;
+            break;
+        case 3:
+            power = Lightning;
+            break;
+        default:
+            power = noPower;
+            std::cout << "\nОшибка в switch case";
+            break;
+    }
+    return power;
+}

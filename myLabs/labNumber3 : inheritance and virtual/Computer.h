@@ -7,7 +7,15 @@
 const int SIZE = 30;
 
 enum operatingSystem {Windows, MacOS, Linux, Android, IOS, noname};
-enum chargingType {USB_C, microUSB, Lightning};
+enum chargingType {USB_C, microUSB, Lightning, noPower};
+
+operatingSystem choiceSystem ();
+chargingType choicePower();
+
+
+
+
+
 
 class Computer
 {
@@ -22,6 +30,8 @@ protected:
 public:
     Computer();
     Computer(const Computer &other);
+    void inputComputerData ();
+
     void setBrandName ();
     char* getBrandName ();
 
@@ -44,16 +54,22 @@ public:
     [[nodiscard]] double getWeight() const;
 };
 
+
+
+
+
+
 class Desktop : public Computer
 {
 protected:
-    char computerCase[SIZE];                //тип корпуса
-    char graphicCardModel[SIZE];            //модель графической карты
+    char computerCase[SIZE]{};                //тип корпуса
+    char graphicCardModel[SIZE]{};            //модель графической карты
     int portCount;                          //кол-во портов
     double powerBlock;                      //мощность блока питания
 public:
     Desktop();
     Desktop(const Desktop& other);
+    void inputDeskTopData();
 
     void setComputerCase();
     char* getComputerCase();
@@ -62,12 +78,16 @@ public:
     char* getGraphicCardModel();
 
     void setPortCount();
-    int getPortCount() const;
+    [[nodiscard]] int getPortCount() const;
 
     void setPowerBlock();
-    double getPowerBlock() const;
+    [[nodiscard]] double getPowerBlock() const;
 };
-};
+
+
+
+
+
 
 class Monoblock : public Desktop
 {
@@ -75,7 +95,25 @@ protected:
     double screenSize;                      //размер экрана
     bool hasTouchscreen;                    //сенсорный ли экран
     int cameraResolution;                   //разрешение камеры
+public:
+    Monoblock();
+    Monoblock(const Monoblock& other);
+    void inputMonoblockData();
+
+    void setScreenSize();
+    [[nodiscard]] double getScreenSize() const;
+
+    void setHasTouchscreen();
+    [[nodiscard]] bool getHasTouchscreen() const;
+
+    void setCameraResolution();
+    [[nodiscard]] int getCameraResolution() const;
 };
+
+
+
+
+
 
 class PortableDevice : public Computer
 {
@@ -84,7 +122,28 @@ protected:
     double screenSize;                      //размер экрана
     bool hasWiFi;                           //наличие wi-fi
     bool hasBluetooth;                      //наличие bluetooth
+public:
+    PortableDevice();
+    PortableDevice(const PortableDevice& other);
+    void inputPortableDeviceData();
+
+    void setBatteryPower();
+    [[nodiscard]] int getBatteryPower() const;
+
+    void setScreenSize();
+    [[nodiscard]] double getScreenSize() const;
+
+    void setHasWiFi();
+    [[nodiscard]] bool getHasWiFi() const;
+
+    void setHasBluetooth();
+    [[nodiscard]] bool getHasBluetooth() const;
 };
+
+
+
+
+
 
 class Laptop : public PortableDevice
 {
@@ -93,15 +152,56 @@ protected:
     int portCount;                          //кол-во портов
     bool keyboardBacklight;                 //подсветка клавиатуры
     double touchpadSize;                    //размер тачпада
+public:
+    Laptop();
+    Laptop(const Laptop &other);
+    void inputLaptopData ();
+
+    void setKeyCount();
+    [[nodiscard]] int getKeyCount() const;
+
+    void setPortCount();
+    [[nodiscard]] int getPortCount() const;
+
+    void setKeyboardBacklight();
+    [[nodiscard]] bool getKeyboardBacklight() const;
+
+    void setTouchpadSize();
+    [[nodiscard]] double getTouchpadSize() const;
 };
+
+
+
+
+
 
 class tabletComputer : public PortableDevice
 {
+protected:
     bool hasStylus;                         //наличие стилуса
     bool hasSIM;                            //наличие симки
     bool hasGPS;                            //наличие GPS;
     chargingType power;                     //тип зарядки
     double screenSize;                      //размер экрана
+public:
+    tabletComputer();
+    tabletComputer(const tabletComputer& other);
+    void inputTabletComputerData();
+
+    void setHasStylus();
+    [[nodiscard]] bool getHasStylus() const;
+
+    void setHasSIM();
+    [[nodiscard]] bool getHasSIM() const;
+
+    void setHasGPS();
+    [[nodiscard]] bool getHasGPS() const;
+
+    void setPower();
+    [[nodiscard]] chargingType getPower() const;
+
+    void setSizeScreen();
+    [[nodiscard]] double getSizeScreen() const;
 };
 
 

@@ -2,7 +2,8 @@
 
 int main()
 {
-    double x = inputDouble(0.0, 100.0);
-    std::cout << x;
+    Computer x;
+    x.inputComputerData();
+    Computer y(x);
     return 0;
 }

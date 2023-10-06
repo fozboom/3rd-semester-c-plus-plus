@@ -14,7 +14,7 @@ char* Computer::getBrandName()
 void Computer::setModelName()
 {
     std::cout << "\nВведите название модели - ";
-    std::cin.getline(brandName, SIZE, '\n');
+    std::cin.getline(modelName, SIZE, '\n');
 }
 
 char *Computer::getModelName()
@@ -45,34 +45,8 @@ double Computer::getStorageCapacity() const
 
 void Computer::setSystem()
 {
-    std::cout << "\nВыберите тип операционной системы:"
-              << "\n1 - Windows"
-              << "\n2 - MasOS"
-              << "\n3 - Linux"
-              << "\n4 - Android"
-              << "\n5 - IOS";
-    int choice = inputNumber(0, 5);
-    switch (choice)
-    {
-        case 1:
-            system = Windows;
-            break;
-        case 2:
-            system = MacOS;
-            break;
-        case 3:
-            system = Linux;
-            break;
-        case 4:
-            system = Android;
-            break;
-        case 5:
-            system = IOS;
-            break;
-        default:
-            std::cout << "\nОшибка в switch case";
-            break;
-    }
+    system = choiceSystem();
+
 }
 
 operatingSystem Computer::getSystem()
@@ -113,9 +87,22 @@ Computer::Computer()
 
 Computer::Computer(const Computer &other)
 {
+    strcpy(this->brandName, other.brandName);
+    strcpy(this->modelName, other.modelName);
     this->RAM = other.RAM;
     this->storageCapacity = other.storageCapacity;
     this->system = other.system;
     this->price = other.price;
     this->weight = other.weight;
+}
+
+void Computer::inputComputerData()
+{
+    setBrandName();
+    setModelName();
+    setRAM();
+    setStorageCapacity();
+    setSystem();
+    setPrice();
+    setWeight();
 }
