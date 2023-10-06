@@ -83,8 +83,8 @@ Mystring& Mystring::operator=(const Mystring &other)
 Mystring operator+(const Mystring &object1, const Mystring &object2)
 {
     char* result = nullptr;
-    myStrcpy(&result, object1.getStr());
-    myStrcat(&result, object2.getStr());
+    myStrcpy(&result, object1.str);
+    myStrcat(&result, object2.str);
     Mystring Result(result);
     delete[] result;
     return Result;
@@ -100,13 +100,13 @@ Mystring& Mystring::operator+=(const Mystring &other)
 //перегрузка оператора ==
 bool operator == (const Mystring &object1,const Mystring &object2)
 {
-    return (myStrcmp(object1.getStr(), object2.getStr()) == 0);
+    return (myStrcmp(object1.str, object2.str) == 0);
 }
 
 //перегрузка оператора !=
 bool operator != (const Mystring &object1,const Mystring &object2)
 {
-    return (myStrcmp(object1.getStr(), object2.getStr()) != 0);
+    return (myStrcmp(object1.str, object2.str) != 0);
 }
 
 //перегрузка оператора <<
@@ -156,6 +156,12 @@ void Mystring::inputStr()
 {
     const int SIZE = 80;
     char* buf = new char [SIZE];
+    if (std::cin.fail())                                                                          //если предыдущее извлечение не удалось
+    {
+        std::cout << "Ошибка ввода числа\n";
+        std::cin.clear();                                                                                           //возвращаем в нормальный режим
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');                                 //очистка всех символов до \n
+    }
     std::cout << "Введите строку - " << std::endl;
     rewind(stdin);
     std::cin.getline(buf, SIZE);
@@ -235,5 +241,11 @@ T inputNumber (T a, T b)
             return x;
         }
     }
+}
+
+if (std::cin.fail() || x < a || x > b)                                                                          //если предыдущее извлечение не удалось
+{
+std::cin.clear();                                                                                           //возвращаем в нормальный режим
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');                                 //очистка всех символов до \n
 }
 

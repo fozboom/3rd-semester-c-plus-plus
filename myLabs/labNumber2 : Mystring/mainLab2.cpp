@@ -4,6 +4,7 @@
 int main()
 {
     Mystring str1, str2, cmpStr, result;
+
     int choice;
     do
     {

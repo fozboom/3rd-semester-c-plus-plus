@@ -121,6 +121,61 @@ build LabNumber2: CXX_EXECUTABLE_LINKER__LabNumber2_Debug CMakeFiles/LabNumber2.
   TARGET_PDB = LabNumber2.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target LabNumber3
+
+
+#############################################
+# Order-only phony target for LabNumber3
+
+build cmake_object_order_depends_target_LabNumber3: phony || CMakeFiles/LabNumber3.dir
+
+build CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o: CXX_COMPILER__LabNumber3_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber3$ $:$ inheritance$ and$ virtual/main.cpp || cmake_object_order_depends_target_LabNumber3
+  DEP_FILE = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber3.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual
+
+build CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o: CXX_COMPILER__LabNumber3_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber3$ $:$ inheritance$ and$ virtual/Computer.cpp || cmake_object_order_depends_target_LabNumber3
+  DEP_FILE = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber3.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual
+
+build CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o: CXX_COMPILER__LabNumber3_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber3$ $:$ inheritance$ and$ virtual/Desktop.cpp || cmake_object_order_depends_target_LabNumber3
+  DEP_FILE = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber3.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual
+
+build CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o: CXX_COMPILER__LabNumber3_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber3$ $:$ inheritance$ and$ virtual/PortableDevice.cpp || cmake_object_order_depends_target_LabNumber3
+  DEP_FILE = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber3.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual
+
+build CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o: CXX_COMPILER__LabNumber3_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber3$ $:$ inheritance$ and$ virtual/functions.cpp || cmake_object_order_depends_target_LabNumber3
+  DEP_FILE = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber3.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LabNumber3
+
+
+#############################################
+# Link the executable LabNumber3
+
+build LabNumber3: CXX_EXECUTABLE_LINKER__LabNumber3_Debug CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
+  OBJECT_DIR = CMakeFiles/LabNumber3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = LabNumber3
+  TARGET_PDB = LabNumber3.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target LeetCode
 
 
@@ -157,6 +212,37 @@ build LeetCode: CXX_EXECUTABLE_LINKER__LeetCode_Debug CMakeFiles/LeetCode.dir/Le
   TARGET_FILE = LeetCode
   TARGET_PDB = LeetCode.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Tetris
+
+
+#############################################
+# Order-only phony target for Tetris
+
+build cmake_object_order_depends_target_Tetris: phony || CMakeFiles/Tetris.dir
+
+build CMakeFiles/Tetris.dir/Tetris/main.cpp.o: CXX_COMPILER__Tetris_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Tetris/main.cpp || cmake_object_order_depends_target_Tetris
+  DEP_FILE = CMakeFiles/Tetris.dir/Tetris/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Tetris.dir
+  OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tetris
+
+
+#############################################
+# Link the executable Tetris
+
+build Tetris: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/Tetris/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
+  OBJECT_DIR = CMakeFiles/Tetris.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Tetris
+  TARGET_PDB = Tetris.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -191,7 +277,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug
 
-build all: phony LabNumber1 LabNumber2 LeetCode
+build all: phony LabNumber1 LabNumber2 LabNumber3 LeetCode Tetris
 
 # =============================================================================
 # Built-in targets

@@ -25,13 +25,17 @@ public:
     void reverse();                                                                     //реверс всей строки
     void toLower();                                                                     //привести к нижнему регистру
     void toCaps();                                                                      //привести к верхнему регистру
+
+    friend bool operator == (const Mystring &object1, const Mystring &object2);
+    friend bool operator != (const Mystring &object1, const Mystring &object2);
+    friend Mystring operator+(const Mystring &object1, const Mystring &object2);
 };
 
-bool operator == (const Mystring &object1, const Mystring &object2);
-bool operator != (const Mystring &object1, const Mystring &object2);
-Mystring operator+(const Mystring &object1, const Mystring &object2);
+
+
 std::ostream& operator<< (std::ostream& out, const Mystring &object);
 template <typename T> T inputNumber (T a, T b);                                         //ввод числа с проверкой
+
 int myStrlen(const char *str);                                                          //функция подсчета длины строки
 [[maybe_unused]] int myStrcmp (const char * str1, const char * str2);                   //функция сравнения строк
 void myStrcpy (char ** str1, const char * str2);                                        //функция копирования строки

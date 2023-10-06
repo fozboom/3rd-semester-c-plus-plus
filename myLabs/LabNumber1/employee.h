@@ -60,6 +60,7 @@ public:
     [[nodiscard]] int getNumberOfEmployee() const {return numberOfEmployee;}                                            //узнать номер сотрудника
     [[nodiscard]] float getSalary() const {return salary;}
     [[nodiscard]] employeeType getTypeEmployee() const {return m_currentEmployee;} //узнать заработную плату
+
     friend void printEmployeeTable(std::vector<Employee> employees);
     friend Employee operator+ (const Employee &person, float salary);//вывести данные в виде таблицы
     friend Employee operator- (const Employee &person, float salary);
