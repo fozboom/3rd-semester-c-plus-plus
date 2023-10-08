@@ -73,17 +73,9 @@ void Desktop::inputData()
 void Desktop::print()
 {
     std::cout << "\033[31mDESKTOP\033[0m" << std::endl;
-    std::cout << "\033[32m" << std::setfill('-') << std::setw(8*SIZE) << "" << std::setfill(' ') << "\033[0m" <<  std::endl;
-    std::cout.setf(std::ios::left);
+    banner();
     std::cout.width(SIZE/2);
-    std::cout   << "brandName" << std::setw(SIZE/2)
-                << "modelName" << std::setw(SIZE/2)
-                << "RAM" << std::setw(SIZE/2)
-                << "stCapacity" <<  std::setw(SIZE/2)
-                << "opSystem" <<  std::setw(SIZE/2)
-                << "price" << std::setw(SIZE/2)
-                << "weight" << std::setw(SIZE/2)
-                << "computerCase" << std::setw(SIZE/2)
+    std::cout   << "computerCase" << std::setw(SIZE/2)
                 << "grCardModel" << std::setw(SIZE/2)
                 << "portCount" << std::setw(SIZE/2)
                 << "powerBlock" << std::endl;

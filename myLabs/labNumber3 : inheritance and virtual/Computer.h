@@ -55,6 +55,8 @@ public:
 
     void setWeight();
     [[nodiscard]] double getWeight() const;
+
+    void banner();
 };
 
 

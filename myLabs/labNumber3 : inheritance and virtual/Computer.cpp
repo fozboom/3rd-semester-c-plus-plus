@@ -126,3 +126,17 @@ void Computer::print()
     std::cout   << price << std::setw(SIZE/2)
                 << weight;
 }
+
+void Computer::banner()
+{
+    std::cout << "\033[32m" << std::setfill('-') << std::setw(8*SIZE) << "" << std::setfill(' ') << "\033[0m" <<  std::endl;
+    std::cout.setf(std::ios::left);
+    std::cout.width(SIZE/2);
+    std::cout   << "brandName" << std::setw(SIZE/2)
+                << "modelName" << std::setw(SIZE/2)
+                << "RAM" << std::setw(SIZE/2)
+                << "stCapacity" <<  std::setw(SIZE/2)
+                << "opSystem" <<  std::setw(SIZE/2)
+                << "price" << std::setw(SIZE/2)
+                << "weight";
+}
