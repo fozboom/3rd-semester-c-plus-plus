@@ -2,6 +2,9 @@
 #define UNTITLED_HEADER_H
 #include "Computer.h"
 #include <iostream>
+#include <ios>
+#include <iomanip>
+
 
 
 

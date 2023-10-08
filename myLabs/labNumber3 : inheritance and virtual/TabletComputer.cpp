@@ -1,4 +1,6 @@
 #include "header.h"
+#include "Computer.h"
+
 tabletComputer::tabletComputer()
 {
     hasStylus = false;
@@ -64,16 +66,7 @@ chargingType tabletComputer::getPower() const
     return power;
 }
 
-void tabletComputer::setSizeScreen()
-{
-    std::cout << "\nВведите размер экрана (дюймы) - ";
-    screenSize = inputDouble(0.0, 30.0);
-}
 
-double tabletComputer::getSizeScreen() const
-{
-    return screenSize;
-}
 
 void tabletComputer::inputTabletComputerData()
 {
@@ -82,5 +75,40 @@ void tabletComputer::inputTabletComputerData()
     setHasSIM();
     setHasGPS();
     setPower();
-    setSizeScreen();
+}
+
+void tabletComputer::print()
+{
+    std::cout << "\033[31mLAPTOP\033[0m" << std::endl;
+    std::cout << "\033[32m" << std::setfill('-') << std::setw(8*SIZE) << "" << std::setfill(' ') << "\033[0m" <<  std::endl;
+    std::cout.setf(std::ios::left);
+    std::cout.width(SIZE/2);
+    std::cout   << "brandName" << std::setw(SIZE/2)
+                << "modelName" << std::setw(SIZE/2)
+                << "RAM" << std::setw(SIZE/2)
+                << "stCapacity" <<  std::setw(SIZE/2)
+                << "opSystem" <<  std::setw(SIZE/2)
+                << "price" << std::setw(SIZE/2)
+                << "weight" << std::setw(SIZE/2)
+                << "batteryPower" << std::setw(SIZE/2)
+                << "screenSize" << std::setw(SIZE/2)
+                << "hasWifi" << std::setw(SIZE/2)
+                << "hasBluetooth" << std::setw(SIZE/2)
+                << "hasStylus" << std::setw(SIZE/2)
+                << "hasSIM" << std::setw(SIZE/2)
+                << "hasGPS" << std::setw(SIZE/2)
+                << "chargeType" << std::endl;
+    Computer::print();
+    std::cout.setf(std::ios::left);
+    std::cout.width(SIZE/2);
+    std::cout   << batteryPower << std::setw(SIZE/2)
+                << screenSize << std::setw(SIZE/2)
+                << hasWiFi << std::setw(SIZE/2)
+                << hasBluetooth << std::setw(SIZE/2)
+                << hasStylus << std::setw(SIZE/2)
+                << hasSIM << std::setw(SIZE/2)
+                << hasGPS << std::setw(SIZE/2);
+    printChargingType(power);
+    std:: cout << std::endl;
+    std::cout << "\033[32m" << std::setfill('-') << std::setw(8*SIZE) << "" << std::setfill(' ') << "\033[0m" <<  std::endl;
 }

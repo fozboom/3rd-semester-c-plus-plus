@@ -137,6 +137,33 @@ operatingSystem choiceSystem ()
     return system;
 }
 
+
+void printOperatingSystem (operatingSystem type)
+{
+    std::cout.width(SIZE/2);
+    switch (type)
+    {
+        case Windows:
+            std::cout << "Windows";
+            break;
+        case MacOS:
+            std::cout << "MacOS";
+            break;
+        case Linux:
+            std::cout << "Linux";
+            break;
+        case Android:
+            std::cout << "Android";
+            break;
+        case IOS:
+            std::cout << "IOS";
+            break;
+        default:
+            std::cout << "noname";
+            break;
+    }
+}
+
 chargingType choicePower()
 {
     std::cout << "\nВыберите тип зарядки:"
@@ -163,3 +190,24 @@ chargingType choicePower()
     }
     return power;
 }
+
+void printChargingType(chargingType type)
+{
+    std::cout.width(SIZE/2);
+    switch (type)
+    {
+        case USB_C:
+            std::cout << "USB-C";
+            break;
+        case microUSB:
+            std::cout << "microUSB";
+            break;
+        case Lightning:
+            std::cout << "Lightning";
+            break;
+        default:
+            std::cout << "noname";
+            break;
+    }
+}
+

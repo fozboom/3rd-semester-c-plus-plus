@@ -10,11 +10,9 @@ enum operatingSystem {Windows, MacOS, Linux, Android, IOS, noname};
 enum chargingType {USB_C, microUSB, Lightning, noPower};
 
 operatingSystem choiceSystem ();
+void printOperatingSystem (operatingSystem type);
 chargingType choicePower();
-
-
-
-
+void printChargingType(chargingType type);
 
 
 class Computer
@@ -30,8 +28,13 @@ protected:
 public:
     Computer();
     Computer(const Computer &other);
-    void inputComputerData ();
-
+    virtual ~Computer() = 0;
+    virtual void inputData ();
+    virtual void print();
+    static void prints(Computer * computer)
+    {
+        computer->print();
+    }
     void setBrandName ();
     char* getBrandName ();
 
@@ -69,7 +72,9 @@ protected:
 public:
     Desktop();
     Desktop(const Desktop& other);
-    void inputDeskTopData();
+    ~Desktop() override;
+    void inputData () override;
+    void print() override;
 
     void setComputerCase();
     char* getComputerCase();
@@ -99,6 +104,7 @@ public:
     Monoblock();
     Monoblock(const Monoblock& other);
     void inputMonoblockData();
+    void print() override;
 
     void setScreenSize();
     [[nodiscard]] double getScreenSize() const;
@@ -126,6 +132,7 @@ public:
     PortableDevice();
     PortableDevice(const PortableDevice& other);
     void inputPortableDeviceData();
+    void print() override;
 
     void setBatteryPower();
     [[nodiscard]] int getBatteryPower() const;
@@ -156,6 +163,7 @@ public:
     Laptop();
     Laptop(const Laptop &other);
     void inputLaptopData ();
+    void print() override;
 
     void setKeyCount();
     [[nodiscard]] int getKeyCount() const;
@@ -182,11 +190,11 @@ protected:
     bool hasSIM;                            //наличие симки
     bool hasGPS;                            //наличие GPS;
     chargingType power;                     //тип зарядки
-    double screenSize;                      //размер экрана
 public:
     tabletComputer();
     tabletComputer(const tabletComputer& other);
     void inputTabletComputerData();
+    void print() override;
 
     void setHasStylus();
     [[nodiscard]] bool getHasStylus() const;
@@ -200,8 +208,6 @@ public:
     void setPower();
     [[nodiscard]] chargingType getPower() const;
 
-    void setSizeScreen();
-    [[nodiscard]] double getSizeScreen() const;
 };
 
 

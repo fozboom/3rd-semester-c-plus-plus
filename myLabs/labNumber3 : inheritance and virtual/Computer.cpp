@@ -1,5 +1,10 @@
 #include "Computer.h"
 
+Computer::~Computer()
+{
+    std::cout << "\nДеструктор класса Computer";
+}
+
 void Computer::setBrandName()
 {
     std::cout << "\nВведите название бренда - ";
@@ -96,7 +101,7 @@ Computer::Computer(const Computer &other)
     this->weight = other.weight;
 }
 
-void Computer::inputComputerData()
+void Computer::inputData()
 {
     setBrandName();
     setModelName();
@@ -105,4 +110,19 @@ void Computer::inputComputerData()
     setSystem();
     setPrice();
     setWeight();
+}
+
+void Computer::print()
+{
+
+    std::cout.setf(std::ios::left);
+    std::cout.width(SIZE/2);
+    std::cout   << brandName << std::setw(SIZE/2)
+                << modelName << std::setw(SIZE/2)
+                << RAM << std::setw(SIZE/2)
+                << storageCapacity;
+    printOperatingSystem(system);
+    std::cout.width(SIZE/2);
+    std::cout   << price << std::setw(SIZE/2)
+                << weight;
 }
