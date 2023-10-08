@@ -20,7 +20,14 @@ add_executable(LabNumber3
         "myLabs/labNumber3 : inheritance and virtual/main.cpp"
         "myLabs/labNumber3 : inheritance and virtual/Computer.cpp"
         "myLabs/labNumber3 : inheritance and virtual/Computer.h"
-        "myLabs/labNumber3 : inheritance and virtual/Desktop.h" "myLabs/labNumber3 : inheritance and virtual/Desktop.cpp" "myLabs/labNumber3 : inheritance and virtual/PortableDevice.h" "myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp" "myLabs/labNumber3 : inheritance and virtual/header.h" "myLabs/labNumber3 : inheritance and virtual/functions.cpp")
+        "myLabs/labNumber3 : inheritance and virtual/Desktop.cpp"
+        "myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp"
+        "myLabs/labNumber3 : inheritance and virtual/header.h"
+        "myLabs/labNumber3 : inheritance and virtual/functions.cpp"
+        "myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp"
+        "myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp"
+        "myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp"
+        "myLabs/labNumber3 : inheritance and virtual/Laptop.cpp")
 
 add_executable(LeetCode
         "LeetCode/mainLeetCode.cpp"
