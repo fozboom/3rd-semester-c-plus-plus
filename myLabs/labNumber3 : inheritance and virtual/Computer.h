@@ -2,12 +2,18 @@
 #define UNTITLED_COMPUTER_H
 #include "header.h"
 #include <iostream>
-#include <cstdlib>
+//#include <cstdlib>
+#include <fstream>
+#include <ios>
+#include <iomanip>
+#include <typeinfo>
 
 const int SIZE = 30;
+const int MAX_SIZE = 50;
 
 enum operatingSystem {Windows, MacOS, Linux, Android, IOS, noname};
 enum chargingType {USB_C, microUSB, Lightning, noPower};
+enum computerType {tDesktop, tMonoblock, tLaptop, tPortableDevice, tTabletComputer};
 
 operatingSystem choiceSystem ();
 void printOperatingSystem (operatingSystem type);
@@ -18,23 +24,31 @@ void printChargingType(chargingType type);
 class Computer
 {
 protected:
-    char brandName[SIZE]{};                   //имя бренда
-    char modelName[SIZE]{};                   //имя модели
+    char brandName[SIZE]{};                 //имя бренда
+    char modelName[SIZE]{};                 //имя модели
     int RAM;                                //количество оперативной памяти
     double storageCapacity;                 //объем хранилища
     operatingSystem system;                 //тип операционной системы
     double price;                           //цена
     double weight;                          //вес
+
+    static int count;                       //кол-во компьютеров
+    static Computer * pComputers[];         //массив указателей
 public:
     Computer();
     Computer(const Computer &other);
+    //Computer(Computer&& other) noexcept ;
+    //Computer& operator=(Computer&& other) noexcept;
     virtual ~Computer() = 0;
-    virtual void inputData ();
+    virtual void inputData();
     virtual void print();
-    static void prints(Computer * computer)
-    {
-        computer->print();
-    }
+
+    static void add();
+    static void display();
+    static void read();
+    static void write();
+    computerType getType();
+
     void setBrandName ();
     char* getBrandName ();
 
@@ -56,13 +70,17 @@ public:
     void setWeight();
     [[nodiscard]] double getWeight() const;
 
-    void banner();
+
+    static void freeMemory()
+    {
+        for (int i = 0; i < count; i++)
+        {
+            delete pComputers[i];
+        }
+    }
+
+    static void banner();
 };
-
-
-
-
-
 
 class Desktop : public Computer
 {
@@ -75,6 +93,8 @@ public:
     Desktop();
     Desktop(const Desktop& other);
     ~Desktop() override;
+    //Desktop& operator=(Desktop&& other) noexcept;
+    //Desktop(Desktop&& other) noexcept ;
     void inputData () override;
     void print() override;
 
@@ -105,7 +125,10 @@ protected:
 public:
     Monoblock();
     Monoblock(const Monoblock& other);
-    void inputMonoblockData();
+    ~Monoblock() override;
+    //Monoblock(Monoblock&& other) noexcept;
+    //Monoblock& operator=(Monoblock&& other) noexcept;
+    void inputData() override;
     void print() override;
 
     void setScreenSize();
@@ -133,7 +156,10 @@ protected:
 public:
     PortableDevice();
     PortableDevice(const PortableDevice& other);
-    void inputPortableDeviceData();
+    ~PortableDevice() override;
+    //PortableDevice(PortableDevice&& other) noexcept;
+    //PortableDevice& operator=(PortableDevice&& other) noexcept;
+    void inputData() override;
     void print() override;
 
     void setBatteryPower();
@@ -164,7 +190,10 @@ protected:
 public:
     Laptop();
     Laptop(const Laptop &other);
-    void inputLaptopData ();
+    ~Laptop() override;
+    //Laptop(Laptop&& other) noexcept;
+    //Laptop& operator= (Laptop&& other) noexcept;
+    void inputData () override;
     void print() override;
 
     void setKeyCount();
@@ -195,7 +224,10 @@ protected:
 public:
     tabletComputer();
     tabletComputer(const tabletComputer& other);
-    void inputTabletComputerData();
+    //tabletComputer(tabletComputer&& other) noexcept;
+    //tabletComputer& operator= (tabletComputer&& other) noexcept;
+    ~tabletComputer() override;
+    void inputData() override;
     void print() override;
 
     void setHasStylus();

@@ -4,14 +4,9 @@
 #include <iostream>
 #include <ios>
 #include <iomanip>
+#include <typeinfo>
 
-
-
-
-
-
-
-int isNumber(std::string str);
+int isNumber(const std::string& str);
 int inputNumber (int start, int finish);
 double inputDouble (double start, double finish);
 

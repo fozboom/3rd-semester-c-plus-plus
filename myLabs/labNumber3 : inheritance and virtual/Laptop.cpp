@@ -2,6 +2,7 @@
 
 Laptop::Laptop()
 {
+    std::cout << "\nКонструктор класса Laptop";
     keyCount = 0;
     portCount = 0;
     keyboardBacklight = false;
@@ -61,9 +62,9 @@ double Laptop::getTouchpadSize() const
     return touchpadSize;
 }
 
-void Laptop::inputLaptopData()
+void Laptop::inputData()
 {
-    inputPortableDeviceData();
+    PortableDevice::inputData();
     setKeyCount();
     setPortCount();
     setKeyboardBacklight();
@@ -83,7 +84,7 @@ void Laptop::print()
                 << "portCount" << std::setw(SIZE/2)
                 << "keyBlLight" << std::setw(SIZE/2)
                 << "touchpadSize" << std::endl;
-    Computer::print();
+    Computer::print(); // NOLINT(bugprone-parent-virtual-call)
     std::cout.setf(std::ios::left);
     std::cout.width(SIZE/2);
     std::cout   << batteryPower << std::setw(SIZE/2)
@@ -96,3 +97,55 @@ void Laptop::print()
                 << touchpadSize << std::endl;
     std::cout << "\033[32m" << std::setfill('-') << std::setw(8*SIZE) << "" << std::setfill(' ') << "\033[0m" <<  std::endl;
 }
+
+Laptop::~Laptop()
+{
+    std::cout << "\nДеструктор класса Laptop";
+}
+
+//Laptop::Laptop(Laptop &&other) noexcept: PortableDevice(std::move(other))
+//{
+//    this->keyCount = other.keyCount;
+//    this->portCount = other.portCount;
+//    this->keyboardBacklight = other.keyboardBacklight;
+//    this->touchpadSize = other.touchpadSize;
+//
+//    other.keyCount = 0;
+//    other.portCount = 0;
+//    other.keyboardBacklight = false;
+//    other.touchpadSize = 0.0;
+//
+//}
+//
+//Laptop &Laptop::operator=(Laptop &&other) noexcept
+//{
+//    if (this != &other)
+//    {
+//        strcpy(this->brandName, other.brandName);
+//        strcpy(this->modelName, other.modelName);
+//        this->RAM = other.RAM;
+//        this->storageCapacity = other.storageCapacity;
+//        this->system = other.system;
+//        this->price = other.price;
+//        this->weight = other.weight;
+//        this->batteryPower = other.batteryPower;
+//        this->screenSize = other.screenSize;
+//        this->hasWiFi = other.hasWiFi;
+//        this->hasBluetooth = other.hasBluetooth;
+//
+//
+//
+//        strcpy(other.brandName, "");
+//        strcpy(other.modelName, "");
+//        other.RAM = 0;
+//        other.storageCapacity = 0.0;
+//        other.system = noname;
+//        other.price = 0.0;
+//        other.weight = 0.0;
+//        other.batteryPower = 0;
+//        other.screenSize = 0.0;
+//        other.hasWiFi = false;
+//        other.hasBluetooth = false;
+//    }
+//    return *this;
+//}

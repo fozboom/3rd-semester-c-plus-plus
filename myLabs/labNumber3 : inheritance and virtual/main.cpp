@@ -1,22 +1,38 @@
 #include "Computer.h"
 
+int Computer::count = 0;
+Computer* Computer::pComputers[MAX_SIZE];
+
 int main()
 {
-    Computer * mas[SIZE];
-    mas[0] = new Desktop;
-    //mas[0]->inputData();
-    mas[1] = new PortableDevice;
-    //mas[1]->inputData();
-    mas[2] = new Monoblock;
-    mas[2]->inputData();
-    mas[3] = new Laptop;
-   // mas[3]->inputData();
-    mas[4] = new tabletComputer;
-    //mas[4]->inputData();
-    Computer::prints(mas[0]);
-    Computer::prints(mas[1]);
-    Computer::prints(mas[2]);
-    Computer::prints(mas[3]);
-    Computer::prints(mas[4]);
-    return 0;
+    char choice;
+    while(true)
+    {
+        std::cout << "\n'a' - добавление сведений о компьютере"
+                     "\n'd' - вывести сведения обо всех компьютерах"
+                     "\n'w' - записать все данные в файл"
+                     "\n'r' - прочитать все данные из файла"
+                     "\n'f' - завершить программу"
+                     "\nВаш выбор: ";
+        std::cin >> choice;
+        rewind(stdin);
+        switch(choice)
+        {
+            case 'a':
+                Computer::add(); break;
+            case 'd':
+                Computer::display();
+                break;
+            case 'w':
+                Computer::write(); break;
+            case 'r':
+                Computer::read(); break;
+            case 'f':{
+                Computer::freeMemory();
+                exit(0);
+            }
+            default:
+                std::cout << "\nНеизвестная команда";
+        }
+    }
 }

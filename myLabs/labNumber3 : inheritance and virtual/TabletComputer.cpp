@@ -3,21 +3,22 @@
 
 tabletComputer::tabletComputer()
 {
+    std::cout << "\nКонструктор класса TabletComputer";
     hasStylus = false;
     hasSIM = false;
     hasGPS = false;
-    power = USB_C;
+    power = noPower;
     screenSize = 0.0;
 }
 
 // Конструктор копирования
 tabletComputer::tabletComputer(const tabletComputer& other) : PortableDevice(other)
 {
-    hasStylus = other.hasStylus;
-    hasSIM = other.hasSIM;
-    hasGPS = other.hasGPS;
-    power = other.power;
-    screenSize = other.screenSize;
+    this->hasStylus = other.hasStylus;
+    this->hasSIM = other.hasSIM;
+    this->hasGPS = other.hasGPS;
+    this->power = other.power;
+    this->screenSize = other.screenSize;
 }
 
 void tabletComputer::setHasStylus()
@@ -68,9 +69,9 @@ chargingType tabletComputer::getPower() const
 
 
 
-void tabletComputer::inputTabletComputerData()
+void tabletComputer::inputData()
 {
-    inputPortableDeviceData();
+    PortableDevice::inputData();
     setHasStylus();
     setHasSIM();
     setHasGPS();
@@ -90,7 +91,7 @@ void tabletComputer::print()
                 << "hasSIM" << std::setw(SIZE/2)
                 << "hasGPS" << std::setw(SIZE/2)
                 << "chargeType" << std::endl;
-    Computer::print();
+    Computer::print(); // NOLINT(bugprone-parent-virtual-call)
     std::cout.setf(std::ios::left);
     std::cout.width(SIZE/2);
     std::cout   << batteryPower << std::setw(SIZE/2)
@@ -104,3 +105,32 @@ void tabletComputer::print()
     std:: cout << std::endl;
     std::cout << "\033[32m" << std::setfill('-') << std::setw(8*SIZE) << "" << std::setfill(' ') << "\033[0m" <<  std::endl;
 }
+
+tabletComputer::~tabletComputer()
+{
+    std::cout << "\nДеструктор класса tabletComputer";
+}
+
+//tabletComputer::tabletComputer(tabletComputer &&other) noexcept: PortableDevice(std::move(other))
+//{
+//    this->hasStylus = other.hasStylus;
+//    this->hasSIM = other.hasSIM;
+//    this->hasGPS = other.hasGPS;
+//    this->power = other.power;
+//    this->screenSize = other.screenSize;
+//
+//    other.hasStylus = false;
+//    other.hasSIM = false;
+//    other.hasGPS = false;
+//    other.power = noPower;
+//    other.screenSize = 0.0;
+//}
+//
+//tabletComputer &tabletComputer::operator=(tabletComputer &&other) noexcept
+//{
+//    if (this != &other)
+//    {
+//
+//    }
+//    return *this;
+//}

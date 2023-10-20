@@ -1,10 +1,12 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cert-err34-c"
 #include "header.h"
 
-int isNumber(std::string str)
+int isNumber(const std::string& str)
 {
-    for (int i = 0; i < str.size(); ++i)
+    for (char i : str)
     {
-        if ((str[i] < '0' || str[i] > '9') && str[i] != '-')
+        if ((i < '0' || i > '9') && i != '-')
             return 0;
     }
     return atoi(str.c_str());
@@ -211,3 +213,5 @@ void printChargingType(chargingType type)
     }
 }
 
+
+#pragma clang diagnostic pop

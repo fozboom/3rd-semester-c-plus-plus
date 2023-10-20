@@ -8,7 +8,7 @@ add_executable(LabNumber1
         "myLabs/LabNumber1/employee.cpp"
         "myLabs/LabNumber1/employee.h"
         "myLabs/labNumber2 : Mystring/Mystring.h"
-        "myLabs/labNumber2 : Mystring/Mystring.cpp")
+        "myLabs/labNumber2 : Mystring/Mystring.cpp" Lection/main.cpp)
 
 
 add_executable(LabNumber2
@@ -35,4 +35,9 @@ add_executable(LeetCode
         "LeetCode/headerLeetCode.h")
 
 add_executable(Tetris
-        "Tetris/main.cpp")
+        "Tetris/main.cpp"
+        Tetris/Game.cpp
+        Tetris/Game.h
+        Tetris/GameField.cpp
+        Tetris/GameField.h
+        Tetris/main.cpp)

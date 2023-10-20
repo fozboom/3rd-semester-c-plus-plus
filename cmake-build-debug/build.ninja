@@ -67,6 +67,12 @@ build CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o: CXX
   OBJECT_DIR = CMakeFiles/LabNumber1.dir
   OBJECT_FILE_DIR = CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring
 
+build CMakeFiles/LabNumber1.dir/Lection/main.cpp.o: CXX_COMPILER__LabNumber1_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Lection/main.cpp || cmake_object_order_depends_target_LabNumber1
+  DEP_FILE = CMakeFiles/LabNumber1.dir/Lection/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/LabNumber1.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabNumber1.dir/Lection
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LabNumber1
@@ -75,7 +81,7 @@ build CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o: CXX
 #############################################
 # Link the executable LabNumber1
 
-build LabNumber1: CXX_EXECUTABLE_LINKER__LabNumber1_Debug CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/mainLab1.cpp.o CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/employee.cpp.o CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o
+build LabNumber1: CXX_EXECUTABLE_LINKER__LabNumber1_Debug CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/mainLab1.cpp.o CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/employee.cpp.o CMakeFiles/LabNumber1.dir/myLabs/labNumber2___Mystring/Mystring.cpp.o CMakeFiles/LabNumber1.dir/Lection/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/LabNumber1.dir
   POST_BUILD = :
@@ -245,6 +251,18 @@ build CMakeFiles/Tetris.dir/Tetris/main.cpp.o: CXX_COMPILER__Tetris_Debug /Users
   OBJECT_DIR = CMakeFiles/Tetris.dir
   OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
 
+build CMakeFiles/Tetris.dir/Tetris/Game.cpp.o: CXX_COMPILER__Tetris_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Tetris/Game.cpp || cmake_object_order_depends_target_Tetris
+  DEP_FILE = CMakeFiles/Tetris.dir/Tetris/Game.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Tetris.dir
+  OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
+
+build CMakeFiles/Tetris.dir/Tetris/GameField.cpp.o: CXX_COMPILER__Tetris_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Tetris/GameField.cpp || cmake_object_order_depends_target_Tetris
+  DEP_FILE = CMakeFiles/Tetris.dir/Tetris/GameField.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Tetris.dir
+  OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Tetris
@@ -253,7 +271,7 @@ build CMakeFiles/Tetris.dir/Tetris/main.cpp.o: CXX_COMPILER__Tetris_Debug /Users
 #############################################
 # Link the executable Tetris
 
-build Tetris: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/Tetris/main.cpp.o
+build Tetris: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/Tetris/main.cpp.o CMakeFiles/Tetris.dir/Tetris/Game.cpp.o CMakeFiles/Tetris.dir/Tetris/GameField.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/Tetris.dir
   POST_BUILD = :
