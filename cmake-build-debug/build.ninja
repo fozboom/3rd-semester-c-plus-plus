@@ -237,47 +237,41 @@ build LeetCode: CXX_EXECUTABLE_LINKER__LeetCode_Debug CMakeFiles/LeetCode.dir/Le
   TARGET_PDB = LeetCode.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Tetris
+# Object build statements for EXECUTABLE target BinaryTree
 
 
 #############################################
-# Order-only phony target for Tetris
+# Order-only phony target for BinaryTree
 
-build cmake_object_order_depends_target_Tetris: phony || CMakeFiles/Tetris.dir
+build cmake_object_order_depends_target_BinaryTree: phony || CMakeFiles/BinaryTree.dir
 
-build CMakeFiles/Tetris.dir/Tetris/main.cpp.o: CXX_COMPILER__Tetris_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Tetris/main.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles/Tetris.dir/Tetris/main.cpp.o.d
+build CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o: CXX_COMPILER__BinaryTree_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber4BinaryTree/Tree.cpp || cmake_object_order_depends_target_BinaryTree
+  DEP_FILE = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
+  OBJECT_DIR = CMakeFiles/BinaryTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree
 
-build CMakeFiles/Tetris.dir/Tetris/Game.cpp.o: CXX_COMPILER__Tetris_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Tetris/Game.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles/Tetris.dir/Tetris/Game.cpp.o.d
+build CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o: CXX_COMPILER__BinaryTree_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber4BinaryTree/main.cpp || cmake_object_order_depends_target_BinaryTree
+  DEP_FILE = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
-
-build CMakeFiles/Tetris.dir/Tetris/GameField.cpp.o: CXX_COMPILER__Tetris_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/Tetris/GameField.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles/Tetris.dir/Tetris/GameField.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles/Tetris.dir/Tetris
+  OBJECT_DIR = CMakeFiles/BinaryTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Tetris
+# Link build statements for EXECUTABLE target BinaryTree
 
 
 #############################################
-# Link the executable Tetris
+# Link the executable BinaryTree
 
-build Tetris: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/Tetris/main.cpp.o CMakeFiles/Tetris.dir/Tetris/Game.cpp.o CMakeFiles/Tetris.dir/Tetris/GameField.cpp.o
+build BinaryTree: CXX_EXECUTABLE_LINKER__BinaryTree_Debug CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
-  OBJECT_DIR = CMakeFiles/Tetris.dir
+  OBJECT_DIR = CMakeFiles/BinaryTree.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Tetris
-  TARGET_PDB = Tetris.dbg
+  TARGET_FILE = BinaryTree
+  TARGET_PDB = BinaryTree.dbg
 
 
 #############################################
@@ -313,7 +307,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug
 
-build all: phony LabNumber1 LabNumber2 LabNumber3 LeetCode Tetris
+build all: phony LabNumber1 LabNumber2 LabNumber3 LeetCode BinaryTree
 
 # =============================================================================
 # Built-in targets

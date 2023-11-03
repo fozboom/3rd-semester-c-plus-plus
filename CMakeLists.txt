@@ -34,10 +34,9 @@ add_executable(LeetCode
         "LeetCode/functionsLeetCode.cpp"
         "LeetCode/headerLeetCode.h")
 
-add_executable(Tetris
-        "Tetris/main.cpp"
-        Tetris/Game.cpp
-        Tetris/Game.h
-        Tetris/GameField.cpp
-        Tetris/GameField.h
-        Tetris/main.cpp)
+add_executable(BinaryTree
+        myLabs/labNumber4BinaryTree/Tree.cpp
+        myLabs/labNumber4BinaryTree/Tree.h
+        myLabs/labNumber4BinaryTree/main.cpp myLabs/labNumber4BinaryTree/main.cpp)
+
+
