@@ -37,6 +37,8 @@ add_executable(LeetCode
 add_executable(BinaryTree
         myLabs/labNumber4BinaryTree/Tree.cpp
         myLabs/labNumber4BinaryTree/Tree.h
-        myLabs/labNumber4BinaryTree/main.cpp myLabs/labNumber4BinaryTree/main.cpp)
+        myLabs/labNumber4BinaryTree/main.cpp
+        myLabs/labNumber4BinaryTree/Exception.cpp
+        myLabs/labNumber4BinaryTree/Exception.h)
 
 

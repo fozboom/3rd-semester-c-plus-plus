@@ -257,6 +257,12 @@ build CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o: CXX_COMP
   OBJECT_DIR = CMakeFiles/BinaryTree.dir
   OBJECT_FILE_DIR = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree
 
+build CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o: CXX_COMPILER__BinaryTree_Debug /Users/fozboom/Library/Mobile$ Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/myLabs/labNumber4BinaryTree/Exception.cpp || cmake_object_order_depends_target_BinaryTree
+  DEP_FILE = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/BinaryTree.dir
+  OBJECT_FILE_DIR = CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BinaryTree
@@ -265,7 +271,7 @@ build CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o: CXX_COMP
 #############################################
 # Link the executable BinaryTree
 
-build BinaryTree: CXX_EXECUTABLE_LINKER__BinaryTree_Debug CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o
+build BinaryTree: CXX_EXECUTABLE_LINKER__BinaryTree_Debug CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
   OBJECT_DIR = CMakeFiles/BinaryTree.dir
   POST_BUILD = :

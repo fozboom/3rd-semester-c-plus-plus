@@ -1,6 +1,22 @@
 #include "Tree.h"
 
 template<typename T>
+void Tree<T>::printTree(Node<T> * Root, int space, bool position)
+{
+    if (Root == nullptr)
+        return;
+    printTree(++(*Root), space + 1, false);      //вывод правого поддерева
+    for (int i = 0; i < space; i++)
+        std::cout << "    ";
+    if (!position)
+        std:: cout << "┌───";
+    else
+        std::cout << "└───";
+    std::cout << Root->data << std::endl;
+    printTree(--(*Root), space + 1, true);
+}
+
+template<typename T>
 Node<T>::Node()
 {
     data = 0;
@@ -49,74 +65,7 @@ void Tree<T>::push(T info)
 template<typename T>
 void Tree<T>::pop( T info)
 {
-    if (current == nullptr)
-    {
-        std::cout << "\nТакого элемента в дереве нету";
-        return;
-    }
-    if (info < current->data)
-    {
-        current = current->left;
-        pop(info);
-    }
-    else if (info > current->data)
-    {
-        current = current->right;
-        pop(info);
-    }
-    else if (info == current->data)
-    {
-        Node<T>* tmp;
-        if (current->left == nullptr && current->right == nullptr)
-        {
-            tmp = current;
-            current = current->previous;
-            if (current->right == tmp)
-                current->right = nullptr;
-            if (current->left == tmp)
-                current->left = nullptr;
-            delete tmp;
-        }
-        else if (current->right == nullptr)
-        {
-            tmp = current;
-            if (current->previous->right == tmp)
-                current->previous->right = current->left;
-            if (current->previous->left == tmp)
-                current->previous->left = current->left;
-            current->previous = tmp->previous;
-            delete tmp;
-        }
-        else if (current->left == nullptr)
-        {
-            tmp = current;
-            if (current->previous->right == tmp)
-                current->previous->right = current->right;
-            if (current->previous->left == tmp)
-                current->previous->left = current->right;
-            current->previous = tmp->previous;
-            delete tmp;
-        }
-        else
-        {
-            tmp = current->left;
-            while (tmp->right != nullptr)
-                tmp = tmp->right;
-            tmp->right = current->right;
-            current->right->previous = tmp;
-            if (tmp->previous == current)
-                tmp->previous = current->previous;
-            tmp = current;
-            if (current->previous->right == current)
-                current->previous->right = current->left;
-            if (current->previous->left == current)
-                current->previous->left = current->left;
-            if (tmp == root)
-                root = root->left;
-            delete tmp;
-        }
-        current = root;
-    }
+    deleteNode(&root, info);
 }
 
 template<typename T>
@@ -129,23 +78,152 @@ int Tree<T>::peek()
 template<typename T>
 void Tree<T>::print()
 {
-    printTree(root, 0, 0, -1);
+    printTree(root, 0, false);
 }
+
 
 
 template<typename T>
-void Tree<T>::printTree(Node<T> * Root, int space, bool position, int info)
+void Tree<T>::deleteNode(Node<T> **Root, T info)
 {
-    if (Root == nullptr)
+    if (*Root == nullptr)
+    {
+        std::cout << "\nВ дереве нет элемента "  << info << std::endl;
         return;
-    printTree(Root->right, space + 1, false, info);      //вывод правого поддерева
-    for (int i = 0; i < space; i++)
-        std::cout << "    ";
-    if (!position)
-        std:: cout << "┌───";
-    else
-        std::cout << "└───";
-    std::cout << Root->data << std::endl;
-    printTree(Root->left, space + 1, true, info);
+    }
+    else if ((*Root)->data > info)
+    {
+        deleteNode(&(*Root)->left, info);
+    }
+    else if ((*Root)->data < info)
+    {
+        deleteNode(&(*Root)->right, info);
+    }
+    else if ((*Root)->data == info)
+    {
+        Node<T> * tmp;
+        if((*Root)->right == nullptr)
+        {
+            tmp = *Root;
+            (*Root) = (*Root)->left;
+            delete tmp;
+        }
+        else if((*Root)->left == nullptr)
+        {
+            tmp = *Root;
+            (*Root) = (*Root)->right;
+            delete tmp;
+        }
+        else
+        {
+            tmp = (*Root)->left;
+            while(tmp->right != nullptr)
+            {
+                tmp = tmp->right;
+            }
+            tmp->right = (*Root)->right;
+            (*Root)->right->previous = tmp;
+            tmp = (*Root);
+            (*Root) = (*Root)->left;
+            delete tmp;
+
+        }
+    }
 }
+
+template<typename T>
+Tree<T>::Tree()
+{
+    root = current = nullptr;
+}
+
+template <typename T>
+void Tree<T>::serializeTree(std::ostream& out, Node<T>* node) try
+{
+    if (node == nullptr) {
+        return;
+    }
+    out.write(reinterpret_cast<const char*>(&node->data), sizeof(node->data));
+    serializeTree(out, node->left);
+    serializeTree(out, node->right);
+}catch (std::ios::failure& ex){
+    throw ExceptionFile(3, "Ошибка при сериализации дерева");
+}
+
+
+template <typename T>
+void Tree<T>::deserializeTree(std::istream& in) try
+{
+    T data;
+    if (!in.read(reinterpret_cast<char*>(&data), sizeof(data)))
+    {
+        return;
+    }
+    push(data);
+    deserializeTree(in);
+    deserializeTree(in);
+}catch (std::ios::failure& ex){
+    throw ExceptionFile(4, "Ошибка при десериализации дерева");
+}
+
+template <typename T>
+void Tree<T>::writeTreeToFile(const char* filename)
+{
+    std::ofstream file(filename, std::ios::binary);
+
+    if (!file) throw ExceptionFile(2, "Ошибка открытия файла для записи");
+
+    serializeTree(file, root);
+    file.close();
+}
+
+template <typename T>
+void Tree<T>::readTreeFromFile(const char* filename)
+{
+    std::ifstream file(filename, std::ios::binary);
+
+    if (!file) throw ExceptionFile(2, "Ошибка открытия файла для записи");
+
+    deserializeTree(file);
+    file.close();
+}
+
+template <typename T>
+void Tree<T>::clearTree(Node<T>* node) {
+    if (node)
+    {
+        clearTree(node->left);
+        clearTree(node->right);
+        delete node;
+    }
+    else
+        return;
+}
+
+template <typename T>
+void Tree<T>::clear()
+{
+    clearTree(root);
+    root = nullptr;
+    current = nullptr;
+}
+
+template<typename T>
+Node<T> *Node<T>::operator~() {
+    return previous;
+}
+
+template<typename T>
+Node<T> *Node<T>::operator--() {
+    return left;
+}
+
+template<typename T>
+Node<T> *Node<T>::operator++() {
+    return right;
+}
+
+
+
+
 
