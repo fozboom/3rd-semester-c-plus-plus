@@ -5,25 +5,36 @@
 
 int inputNumber();
 
-class Exception:public std::exception
+class Exceptions: public std::exception
 {
-private:
-    int code;
-    char message[80]{};
+protected:
+    std::string message;
 public:
-    Exception();
-    Exception(int x, const char* mes);
-    void showErrorMessage();
+    Exceptions() = default;
+
+    [[nodiscard]] const char* what() const noexcept override{return message.c_str();}
+
 };
 
-class ExceptionInputNumber : public Exception {
+class ExceptionFile: public Exceptions
+{
 public:
-    ExceptionInputNumber(int x, const char* m): Exception(x, m){}
-};
+    explicit ExceptionFile(std::string mes)
+    {
+        message = std::move(mes);
+    }
+    ExceptionFile() = delete;
 
-class ExceptionFile : public Exception {
+};
+class ExceptionInputNumber: public Exceptions
+{
 public:
-    ExceptionFile(int x, const char* m) : Exception(x, m) {}
+    explicit ExceptionInputNumber(std::string mes)
+    {
+        message = std::move(mes);
+    }
+    ExceptionInputNumber() = delete;
+
 };
 
 

@@ -1,7 +1,7 @@
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/LabNumber1.dir
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/LabNumber2.dir
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/LabNumber3.dir
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/LeetCode.dir
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/BinaryTree.dir
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/fozboom/Library/Mobile Documents/com~apple~CloudDocs/myFiles/Programming/CLionProjects/С++/3-stSemestrLabs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LabNumber1.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LabNumber2.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LabNumber3.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LeetCode.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/BinaryTree.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -58,11 +58,11 @@ int main()
             }
 
         }catch (ExceptionFile& ex){
-            ex.showErrorMessage();
+            std::cerr << ex.what();
         }catch (ExceptionInputNumber &ex) {
-            ex.showErrorMessage();
+            std::cerr << ex.what();
         }catch (std::bad_alloc& ex){
-            ex.what();
+            std::cerr << ex.what();
             exit(EXIT_FAILURE);
         }
     }

@@ -147,7 +147,7 @@ void Tree<T>::serializeTree(std::ostream& out, Node<T>* node) try
     serializeTree(out, node->left);
     serializeTree(out, node->right);
 }catch (std::ios::failure& ex){
-    throw ExceptionFile(3, "Ошибка при сериализации дерева");
+    throw ExceptionFile("Ошибка при сериализации дерева");
 }
 
 
@@ -163,7 +163,7 @@ void Tree<T>::deserializeTree(std::istream& in) try
     deserializeTree(in);
     deserializeTree(in);
 }catch (std::ios::failure& ex){
-    throw ExceptionFile(4, "Ошибка при десериализации дерева");
+    throw ExceptionFile("Ошибка при десериализации дерева");
 }
 
 template <typename T>
@@ -171,7 +171,7 @@ void Tree<T>::writeTreeToFile(const char* filename)
 {
     std::ofstream file(filename, std::ios::binary);
 
-    if (!file) throw ExceptionFile(2, "Ошибка открытия файла для записи");
+    if (!file) throw ExceptionFile("Ошибка открытия файла для записи");
 
     serializeTree(file, root);
     file.close();
@@ -182,7 +182,7 @@ void Tree<T>::readTreeFromFile(const char* filename)
 {
     std::ifstream file(filename, std::ios::binary);
 
-    if (!file) throw ExceptionFile(2, "Ошибка открытия файла для записи");
+    if (!file) throw ExceptionFile("Ошибка открытия файла для записи");
 
     deserializeTree(file);
     file.close();
