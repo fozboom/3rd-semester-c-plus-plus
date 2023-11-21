@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "untitled",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BinaryTree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BinaryTree-Debug-4d12f82d09bbe582b7a0.json",
+					"name" : "BinaryTree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Katya::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Katya-Debug-6849b90f36d32c7900ac.json",
+					"name" : "Katya",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LabNumber1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LabNumber1-Debug-1b18705a5fe1a72e29ca.json",
+					"name" : "LabNumber1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LabNumber2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LabNumber2-Debug-fb861c40c2b8ef05c92d.json",
+					"name" : "LabNumber2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LabNumber3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LabNumber3-Debug-57e39017592f825b55c0.json",
+					"name" : "LabNumber3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode-Debug-765615048333386378b5.json",
+					"name" : "LeetCode",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug",
+		"source" : "/Users/fozboom/CLionProjects/3stSemestr"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

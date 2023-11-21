@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LabNumber1">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LabNumber1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LabNumber1/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LabNumber1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LabNumber2">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LabNumber2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LabNumber2/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LabNumber2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Katya">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Katya" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 Katya"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Katya/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Katya" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 Katya/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LabNumber3">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LabNumber3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LabNumber3/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LabNumber3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeetCode">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LeetCode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeetCode"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeetCode/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LeetCode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeetCode/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BinaryTree">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/BinaryTree" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinaryTree"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BinaryTree/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/BinaryTree" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 BinaryTree/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/Lection/main.cpp">
+			<Option target="LabNumber1"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/LeetCode/functionsLeetCode.cpp">
+			<Option target="LeetCode"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/LeetCode/headerLeetCode.h">
+			<Option target="LeetCode"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/LeetCode/mainLeetCode.cpp">
+			<Option target="LeetCode"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/Exceptions.h">
+			<Option target="Katya"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/functions.cpp">
+			<Option target="Katya"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/functions.h">
+			<Option target="Katya"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/main.cpp">
+			<Option target="Katya"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/LabNumber1/employee.cpp">
+			<Option target="LabNumber1"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/LabNumber1/employee.h">
+			<Option target="LabNumber1"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/LabNumber1/mainLab1.cpp">
+			<Option target="LabNumber1"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber2 : Mystring/Mystring.cpp">
+			<Option target="LabNumber1"/>
+			<Option target="LabNumber2"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber2 : Mystring/Mystring.h">
+			<Option target="LabNumber1"/>
+			<Option target="LabNumber2"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber2 : Mystring/mainLab2.cpp">
+			<Option target="LabNumber2"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.h">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Desktop.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Laptop.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/functions.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/header.h">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/main.cpp">
+			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Exception.cpp">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Exception.h">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Tree.cpp">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Tree.h">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/main.cpp">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
