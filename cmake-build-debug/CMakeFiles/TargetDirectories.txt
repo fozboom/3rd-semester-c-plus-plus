@@ -1,5 +1,6 @@
 /Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LabNumber1.dir
 /Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LabNumber2.dir
+/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/Katya.dir
 /Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LabNumber3.dir
 /Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/LeetCode.dir
 /Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles/BinaryTree.dir

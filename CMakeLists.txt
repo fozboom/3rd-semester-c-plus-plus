@@ -15,6 +15,11 @@ add_executable(LabNumber2
         "myLabs/labNumber2 : Mystring/mainLab2.cpp"
         "myLabs/labNumber2 : Mystring/Mystring.h"
         "myLabs/labNumber2 : Mystring/Mystring.cpp")
+add_executable(Katya
+        "myLabs/Katya/main.cpp"
+        "myLabs/Katya/functions.cpp"
+        "myLabs/Katya/functions.h"
+        myLabs/Katya/Exceptions.h)
 
 add_executable(LabNumber3
         "myLabs/labNumber3 : inheritance and virtual/main.cpp"
