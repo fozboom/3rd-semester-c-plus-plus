@@ -143,19 +143,6 @@ LabNumber2/fast:
 .PHONY : LabNumber2/fast
 
 #=============================================================================
-# Target rules for targets named Katya
-
-# Build rule for target.
-Katya: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Katya
-.PHONY : Katya
-
-# fast build rule for target.
-Katya/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/build
-.PHONY : Katya/fast
-
-#=============================================================================
 # Target rules for targets named LabNumber3
 
 # Build rule for target.
@@ -193,6 +180,19 @@ BinaryTree: cmake_check_build_system
 BinaryTree/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/build
 .PHONY : BinaryTree/fast
+
+#=============================================================================
+# Target rules for targets named container
+
+# Build rule for target.
+container: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 container
+.PHONY : container
+
+# fast build rule for target.
+container/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/build
+.PHONY : container/fast
 
 Lection/main.o: Lection/main.cpp.o
 .PHONY : Lection/main.o
@@ -266,54 +266,6 @@ LeetCode/mainLeetCode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/LeetCode/mainLeetCode.cpp.s
 .PHONY : LeetCode/mainLeetCode.cpp.s
 
-myLabs/Katya/functions.o: myLabs/Katya/functions.cpp.o
-.PHONY : myLabs/Katya/functions.o
-
-# target to build an object file
-myLabs/Katya/functions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/myLabs/Katya/functions.cpp.o
-.PHONY : myLabs/Katya/functions.cpp.o
-
-myLabs/Katya/functions.i: myLabs/Katya/functions.cpp.i
-.PHONY : myLabs/Katya/functions.i
-
-# target to preprocess a source file
-myLabs/Katya/functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/myLabs/Katya/functions.cpp.i
-.PHONY : myLabs/Katya/functions.cpp.i
-
-myLabs/Katya/functions.s: myLabs/Katya/functions.cpp.s
-.PHONY : myLabs/Katya/functions.s
-
-# target to generate assembly for a file
-myLabs/Katya/functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/myLabs/Katya/functions.cpp.s
-.PHONY : myLabs/Katya/functions.cpp.s
-
-myLabs/Katya/main.o: myLabs/Katya/main.cpp.o
-.PHONY : myLabs/Katya/main.o
-
-# target to build an object file
-myLabs/Katya/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/myLabs/Katya/main.cpp.o
-.PHONY : myLabs/Katya/main.cpp.o
-
-myLabs/Katya/main.i: myLabs/Katya/main.cpp.i
-.PHONY : myLabs/Katya/main.i
-
-# target to preprocess a source file
-myLabs/Katya/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/myLabs/Katya/main.cpp.i
-.PHONY : myLabs/Katya/main.cpp.i
-
-myLabs/Katya/main.s: myLabs/Katya/main.cpp.s
-.PHONY : myLabs/Katya/main.s
-
-# target to generate assembly for a file
-myLabs/Katya/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Katya.dir/build.make CMakeFiles/Katya.dir/myLabs/Katya/main.cpp.s
-.PHONY : myLabs/Katya/main.cpp.s
-
 myLabs/LabNumber1/employee.o: myLabs/LabNumber1/employee.cpp.o
 .PHONY : myLabs/LabNumber1/employee.o
 
@@ -361,6 +313,30 @@ myLabs/LabNumber1/mainLab1.s: myLabs/LabNumber1/mainLab1.cpp.s
 myLabs/LabNumber1/mainLab1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber1.dir/build.make CMakeFiles/LabNumber1.dir/myLabs/LabNumber1/mainLab1.cpp.s
 .PHONY : myLabs/LabNumber1/mainLab1.cpp.s
+
+myLabs/ListSTD/main.o: myLabs/ListSTD/main.cpp.o
+.PHONY : myLabs/ListSTD/main.o
+
+# target to build an object file
+myLabs/ListSTD/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/myLabs/ListSTD/main.cpp.o
+.PHONY : myLabs/ListSTD/main.cpp.o
+
+myLabs/ListSTD/main.i: myLabs/ListSTD/main.cpp.i
+.PHONY : myLabs/ListSTD/main.i
+
+# target to preprocess a source file
+myLabs/ListSTD/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/myLabs/ListSTD/main.cpp.i
+.PHONY : myLabs/ListSTD/main.cpp.i
+
+myLabs/ListSTD/main.s: myLabs/ListSTD/main.cpp.s
+.PHONY : myLabs/ListSTD/main.s
+
+# target to generate assembly for a file
+myLabs/ListSTD/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/container.dir/build.make CMakeFiles/container.dir/myLabs/ListSTD/main.cpp.s
+.PHONY : myLabs/ListSTD/main.cpp.s
 
 myLabs/labNumber2___Mystring/Mystring.o: myLabs/labNumber2___Mystring/Mystring.cpp.o
 .PHONY : myLabs/labNumber2___Mystring/Mystring.o
@@ -413,197 +389,245 @@ myLabs/labNumber2___Mystring/mainLab2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber2.dir/build.make CMakeFiles/LabNumber2.dir/myLabs/labNumber2___Mystring/mainLab2.cpp.s
 .PHONY : myLabs/labNumber2___Mystring/mainLab2.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/Computer.o: myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Computer.o
+myLabs/labNumber3/Computer.o: myLabs/labNumber3/Computer.cpp.o
+.PHONY : myLabs/labNumber3/Computer.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o
+myLabs/labNumber3/Computer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o
+.PHONY : myLabs/labNumber3/Computer.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/Computer.i: myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Computer.i
+myLabs/labNumber3/Computer.i: myLabs/labNumber3/Computer.cpp.i
+.PHONY : myLabs/labNumber3/Computer.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i
+myLabs/labNumber3/Computer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.i
+.PHONY : myLabs/labNumber3/Computer.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/Computer.s: myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Computer.s
+myLabs/labNumber3/Computer.s: myLabs/labNumber3/Computer.cpp.s
+.PHONY : myLabs/labNumber3/Computer.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s
+myLabs/labNumber3/Computer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.s
+.PHONY : myLabs/labNumber3/Computer.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/Desktop.o: myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Desktop.o
+myLabs/labNumber3/Desktop.o: myLabs/labNumber3/Desktop.cpp.o
+.PHONY : myLabs/labNumber3/Desktop.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o
+myLabs/labNumber3/Desktop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o
+.PHONY : myLabs/labNumber3/Desktop.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/Desktop.i: myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Desktop.i
+myLabs/labNumber3/Desktop.i: myLabs/labNumber3/Desktop.cpp.i
+.PHONY : myLabs/labNumber3/Desktop.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i
+myLabs/labNumber3/Desktop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.i
+.PHONY : myLabs/labNumber3/Desktop.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/Desktop.s: myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Desktop.s
+myLabs/labNumber3/Desktop.s: myLabs/labNumber3/Desktop.cpp.s
+.PHONY : myLabs/labNumber3/Desktop.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s
+myLabs/labNumber3/Desktop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.s
+.PHONY : myLabs/labNumber3/Desktop.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/Laptop.o: myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Laptop.o
+myLabs/labNumber3/Laptop.o: myLabs/labNumber3/Laptop.cpp.o
+.PHONY : myLabs/labNumber3/Laptop.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o
+myLabs/labNumber3/Laptop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o
+.PHONY : myLabs/labNumber3/Laptop.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/Laptop.i: myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Laptop.i
+myLabs/labNumber3/Laptop.i: myLabs/labNumber3/Laptop.cpp.i
+.PHONY : myLabs/labNumber3/Laptop.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i
+myLabs/labNumber3/Laptop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.i
+.PHONY : myLabs/labNumber3/Laptop.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/Laptop.s: myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Laptop.s
+myLabs/labNumber3/Laptop.s: myLabs/labNumber3/Laptop.cpp.s
+.PHONY : myLabs/labNumber3/Laptop.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s
+myLabs/labNumber3/Laptop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.s
+.PHONY : myLabs/labNumber3/Laptop.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/Monoblock.o: myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Monoblock.o
+myLabs/labNumber3/Monoblock.o: myLabs/labNumber3/Monoblock.cpp.o
+.PHONY : myLabs/labNumber3/Monoblock.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o
+myLabs/labNumber3/Monoblock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o
+.PHONY : myLabs/labNumber3/Monoblock.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/Monoblock.i: myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Monoblock.i
+myLabs/labNumber3/Monoblock.i: myLabs/labNumber3/Monoblock.cpp.i
+.PHONY : myLabs/labNumber3/Monoblock.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i
+myLabs/labNumber3/Monoblock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.i
+.PHONY : myLabs/labNumber3/Monoblock.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/Monoblock.s: myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Monoblock.s
+myLabs/labNumber3/Monoblock.s: myLabs/labNumber3/Monoblock.cpp.s
+.PHONY : myLabs/labNumber3/Monoblock.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s
+myLabs/labNumber3/Monoblock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.s
+.PHONY : myLabs/labNumber3/Monoblock.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/PortableDevice.o: myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/PortableDevice.o
+myLabs/labNumber3/PortableDevice.o: myLabs/labNumber3/PortableDevice.cpp.o
+.PHONY : myLabs/labNumber3/PortableDevice.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o
+myLabs/labNumber3/PortableDevice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o
+.PHONY : myLabs/labNumber3/PortableDevice.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/PortableDevice.i: myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/PortableDevice.i
+myLabs/labNumber3/PortableDevice.i: myLabs/labNumber3/PortableDevice.cpp.i
+.PHONY : myLabs/labNumber3/PortableDevice.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i
+myLabs/labNumber3/PortableDevice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.i
+.PHONY : myLabs/labNumber3/PortableDevice.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/PortableDevice.s: myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/PortableDevice.s
+myLabs/labNumber3/PortableDevice.s: myLabs/labNumber3/PortableDevice.cpp.s
+.PHONY : myLabs/labNumber3/PortableDevice.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s
+myLabs/labNumber3/PortableDevice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.s
+.PHONY : myLabs/labNumber3/PortableDevice.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/TabletComputer.o: myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/TabletComputer.o
+myLabs/labNumber3/TabletComputer.o: myLabs/labNumber3/TabletComputer.cpp.o
+.PHONY : myLabs/labNumber3/TabletComputer.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o
+myLabs/labNumber3/TabletComputer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o
+.PHONY : myLabs/labNumber3/TabletComputer.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/TabletComputer.i: myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/TabletComputer.i
+myLabs/labNumber3/TabletComputer.i: myLabs/labNumber3/TabletComputer.cpp.i
+.PHONY : myLabs/labNumber3/TabletComputer.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i
+myLabs/labNumber3/TabletComputer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.i
+.PHONY : myLabs/labNumber3/TabletComputer.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/TabletComputer.s: myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/TabletComputer.s
+myLabs/labNumber3/TabletComputer.s: myLabs/labNumber3/TabletComputer.cpp.s
+.PHONY : myLabs/labNumber3/TabletComputer.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s
+myLabs/labNumber3/TabletComputer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.s
+.PHONY : myLabs/labNumber3/TabletComputer.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/functions.o: myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/functions.o
+myLabs/labNumber3/functions.o: myLabs/labNumber3/functions.cpp.o
+.PHONY : myLabs/labNumber3/functions.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o
+myLabs/labNumber3/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o
+.PHONY : myLabs/labNumber3/functions.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/functions.i: myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/functions.i
+myLabs/labNumber3/functions.i: myLabs/labNumber3/functions.cpp.i
+.PHONY : myLabs/labNumber3/functions.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i
+myLabs/labNumber3/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.i
+.PHONY : myLabs/labNumber3/functions.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/functions.s: myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/functions.s
+myLabs/labNumber3/functions.s: myLabs/labNumber3/functions.cpp.s
+.PHONY : myLabs/labNumber3/functions.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s
+myLabs/labNumber3/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.s
+.PHONY : myLabs/labNumber3/functions.cpp.s
 
-myLabs/labNumber3___inheritance_and_virtual/main.o: myLabs/labNumber3___inheritance_and_virtual/main.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/main.o
+myLabs/labNumber3/main.o: myLabs/labNumber3/main.cpp.o
+.PHONY : myLabs/labNumber3/main.o
 
 # target to build an object file
-myLabs/labNumber3___inheritance_and_virtual/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/main.cpp.o
+myLabs/labNumber3/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o
+.PHONY : myLabs/labNumber3/main.cpp.o
 
-myLabs/labNumber3___inheritance_and_virtual/main.i: myLabs/labNumber3___inheritance_and_virtual/main.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/main.i
+myLabs/labNumber3/main.i: myLabs/labNumber3/main.cpp.i
+.PHONY : myLabs/labNumber3/main.i
 
 # target to preprocess a source file
-myLabs/labNumber3___inheritance_and_virtual/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.i
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/main.cpp.i
+myLabs/labNumber3/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.i
+.PHONY : myLabs/labNumber3/main.cpp.i
 
-myLabs/labNumber3___inheritance_and_virtual/main.s: myLabs/labNumber3___inheritance_and_virtual/main.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/main.s
+myLabs/labNumber3/main.s: myLabs/labNumber3/main.cpp.s
+.PHONY : myLabs/labNumber3/main.s
 
 # target to generate assembly for a file
-myLabs/labNumber3___inheritance_and_virtual/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.s
-.PHONY : myLabs/labNumber3___inheritance_and_virtual/main.cpp.s
+myLabs/labNumber3/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabNumber3.dir/build.make CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.s
+.PHONY : myLabs/labNumber3/main.cpp.s
+
+myLabs/labNumber4BinaryTree/Computer.o: myLabs/labNumber4BinaryTree/Computer.cpp.o
+.PHONY : myLabs/labNumber4BinaryTree/Computer.o
+
+# target to build an object file
+myLabs/labNumber4BinaryTree/Computer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o
+.PHONY : myLabs/labNumber4BinaryTree/Computer.cpp.o
+
+myLabs/labNumber4BinaryTree/Computer.i: myLabs/labNumber4BinaryTree/Computer.cpp.i
+.PHONY : myLabs/labNumber4BinaryTree/Computer.i
+
+# target to preprocess a source file
+myLabs/labNumber4BinaryTree/Computer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.i
+.PHONY : myLabs/labNumber4BinaryTree/Computer.cpp.i
+
+myLabs/labNumber4BinaryTree/Computer.s: myLabs/labNumber4BinaryTree/Computer.cpp.s
+.PHONY : myLabs/labNumber4BinaryTree/Computer.s
+
+# target to generate assembly for a file
+myLabs/labNumber4BinaryTree/Computer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.s
+.PHONY : myLabs/labNumber4BinaryTree/Computer.cpp.s
+
+myLabs/labNumber4BinaryTree/Desktop.o: myLabs/labNumber4BinaryTree/Desktop.cpp.o
+.PHONY : myLabs/labNumber4BinaryTree/Desktop.o
+
+# target to build an object file
+myLabs/labNumber4BinaryTree/Desktop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o
+.PHONY : myLabs/labNumber4BinaryTree/Desktop.cpp.o
+
+myLabs/labNumber4BinaryTree/Desktop.i: myLabs/labNumber4BinaryTree/Desktop.cpp.i
+.PHONY : myLabs/labNumber4BinaryTree/Desktop.i
+
+# target to preprocess a source file
+myLabs/labNumber4BinaryTree/Desktop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.i
+.PHONY : myLabs/labNumber4BinaryTree/Desktop.cpp.i
+
+myLabs/labNumber4BinaryTree/Desktop.s: myLabs/labNumber4BinaryTree/Desktop.cpp.s
+.PHONY : myLabs/labNumber4BinaryTree/Desktop.s
+
+# target to generate assembly for a file
+myLabs/labNumber4BinaryTree/Desktop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.s
+.PHONY : myLabs/labNumber4BinaryTree/Desktop.cpp.s
 
 myLabs/labNumber4BinaryTree/Exception.o: myLabs/labNumber4BinaryTree/Exception.cpp.o
 .PHONY : myLabs/labNumber4BinaryTree/Exception.o
@@ -653,6 +677,30 @@ myLabs/labNumber4BinaryTree/Tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.s
 .PHONY : myLabs/labNumber4BinaryTree/Tree.cpp.s
 
+myLabs/labNumber4BinaryTree/functions.o: myLabs/labNumber4BinaryTree/functions.cpp.o
+.PHONY : myLabs/labNumber4BinaryTree/functions.o
+
+# target to build an object file
+myLabs/labNumber4BinaryTree/functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o
+.PHONY : myLabs/labNumber4BinaryTree/functions.cpp.o
+
+myLabs/labNumber4BinaryTree/functions.i: myLabs/labNumber4BinaryTree/functions.cpp.i
+.PHONY : myLabs/labNumber4BinaryTree/functions.i
+
+# target to preprocess a source file
+myLabs/labNumber4BinaryTree/functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.i
+.PHONY : myLabs/labNumber4BinaryTree/functions.cpp.i
+
+myLabs/labNumber4BinaryTree/functions.s: myLabs/labNumber4BinaryTree/functions.cpp.s
+.PHONY : myLabs/labNumber4BinaryTree/functions.s
+
+# target to generate assembly for a file
+myLabs/labNumber4BinaryTree/functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryTree.dir/build.make CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.s
+.PHONY : myLabs/labNumber4BinaryTree/functions.cpp.s
+
 myLabs/labNumber4BinaryTree/main.o: myLabs/labNumber4BinaryTree/main.cpp.o
 .PHONY : myLabs/labNumber4BinaryTree/main.o
 
@@ -686,11 +734,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BinaryTree"
-	@echo "... Katya"
 	@echo "... LabNumber1"
 	@echo "... LabNumber2"
 	@echo "... LabNumber3"
 	@echo "... LeetCode"
+	@echo "... container"
 	@echo "... Lection/main.o"
 	@echo "... Lection/main.i"
 	@echo "... Lection/main.s"
@@ -700,54 +748,60 @@ help:
 	@echo "... LeetCode/mainLeetCode.o"
 	@echo "... LeetCode/mainLeetCode.i"
 	@echo "... LeetCode/mainLeetCode.s"
-	@echo "... myLabs/Katya/functions.o"
-	@echo "... myLabs/Katya/functions.i"
-	@echo "... myLabs/Katya/functions.s"
-	@echo "... myLabs/Katya/main.o"
-	@echo "... myLabs/Katya/main.i"
-	@echo "... myLabs/Katya/main.s"
 	@echo "... myLabs/LabNumber1/employee.o"
 	@echo "... myLabs/LabNumber1/employee.i"
 	@echo "... myLabs/LabNumber1/employee.s"
 	@echo "... myLabs/LabNumber1/mainLab1.o"
 	@echo "... myLabs/LabNumber1/mainLab1.i"
 	@echo "... myLabs/LabNumber1/mainLab1.s"
+	@echo "... myLabs/ListSTD/main.o"
+	@echo "... myLabs/ListSTD/main.i"
+	@echo "... myLabs/ListSTD/main.s"
 	@echo "... myLabs/labNumber2___Mystring/Mystring.o"
 	@echo "... myLabs/labNumber2___Mystring/Mystring.i"
 	@echo "... myLabs/labNumber2___Mystring/Mystring.s"
 	@echo "... myLabs/labNumber2___Mystring/mainLab2.o"
 	@echo "... myLabs/labNumber2___Mystring/mainLab2.i"
 	@echo "... myLabs/labNumber2___Mystring/mainLab2.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Computer.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Computer.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Computer.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Desktop.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Desktop.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Desktop.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Laptop.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Laptop.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Laptop.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Monoblock.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Monoblock.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/Monoblock.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/PortableDevice.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/PortableDevice.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/PortableDevice.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/TabletComputer.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/TabletComputer.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/TabletComputer.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/functions.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/functions.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/functions.s"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/main.o"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/main.i"
-	@echo "... myLabs/labNumber3___inheritance_and_virtual/main.s"
+	@echo "... myLabs/labNumber3/Computer.o"
+	@echo "... myLabs/labNumber3/Computer.i"
+	@echo "... myLabs/labNumber3/Computer.s"
+	@echo "... myLabs/labNumber3/Desktop.o"
+	@echo "... myLabs/labNumber3/Desktop.i"
+	@echo "... myLabs/labNumber3/Desktop.s"
+	@echo "... myLabs/labNumber3/Laptop.o"
+	@echo "... myLabs/labNumber3/Laptop.i"
+	@echo "... myLabs/labNumber3/Laptop.s"
+	@echo "... myLabs/labNumber3/Monoblock.o"
+	@echo "... myLabs/labNumber3/Monoblock.i"
+	@echo "... myLabs/labNumber3/Monoblock.s"
+	@echo "... myLabs/labNumber3/PortableDevice.o"
+	@echo "... myLabs/labNumber3/PortableDevice.i"
+	@echo "... myLabs/labNumber3/PortableDevice.s"
+	@echo "... myLabs/labNumber3/TabletComputer.o"
+	@echo "... myLabs/labNumber3/TabletComputer.i"
+	@echo "... myLabs/labNumber3/TabletComputer.s"
+	@echo "... myLabs/labNumber3/functions.o"
+	@echo "... myLabs/labNumber3/functions.i"
+	@echo "... myLabs/labNumber3/functions.s"
+	@echo "... myLabs/labNumber3/main.o"
+	@echo "... myLabs/labNumber3/main.i"
+	@echo "... myLabs/labNumber3/main.s"
+	@echo "... myLabs/labNumber4BinaryTree/Computer.o"
+	@echo "... myLabs/labNumber4BinaryTree/Computer.i"
+	@echo "... myLabs/labNumber4BinaryTree/Computer.s"
+	@echo "... myLabs/labNumber4BinaryTree/Desktop.o"
+	@echo "... myLabs/labNumber4BinaryTree/Desktop.i"
+	@echo "... myLabs/labNumber4BinaryTree/Desktop.s"
 	@echo "... myLabs/labNumber4BinaryTree/Exception.o"
 	@echo "... myLabs/labNumber4BinaryTree/Exception.i"
 	@echo "... myLabs/labNumber4BinaryTree/Exception.s"
 	@echo "... myLabs/labNumber4BinaryTree/Tree.o"
 	@echo "... myLabs/labNumber4BinaryTree/Tree.i"
 	@echo "... myLabs/labNumber4BinaryTree/Tree.s"
+	@echo "... myLabs/labNumber4BinaryTree/functions.o"
+	@echo "... myLabs/labNumber4BinaryTree/functions.i"
+	@echo "... myLabs/labNumber4BinaryTree/functions.s"
 	@echo "... myLabs/labNumber4BinaryTree/main.o"
 	@echo "... myLabs/labNumber4BinaryTree/main.i"
 	@echo "... myLabs/labNumber4BinaryTree/main.s"

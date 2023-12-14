@@ -2,7 +2,7 @@
 #define UNTITLED_COMPUTER_H
 #include "header.h"
 #include <iostream>
-//#include <cstdlib>
+
 #include <fstream>
 #include <ios>
 #include <iomanip>
@@ -27,26 +27,19 @@ protected:
     char brandName[SIZE]{};                 //имя бренда
     char modelName[SIZE]{};                 //имя модели
     int RAM;                                //количество оперативной памяти
-    double storageCapacity;                 //объем хранилища
+    char *storageCapacity;                 //объем хранилища
     operatingSystem system;                 //тип операционной системы
-    double price;                           //цена
-    double weight;                          //вес
-
-    static int count;                       //кол-во компьютеров
-    static Computer * pComputers[];         //массив указателей
+    char *price;                           //цена
+    char *weight;                          //вес
+    int count = 0;
 public:
     Computer();
     Computer(const Computer &other);
-    //Computer(Computer&& other) noexcept ;
-    //Computer& operator=(Computer&& other) noexcept;
+
     virtual ~Computer() = 0;
     virtual void inputData();
     virtual void print();
 
-    static void add();
-    static void display();
-    static void read();
-    static void write();
     computerType getType();
 
     void setBrandName ();
@@ -70,14 +63,8 @@ public:
     void setWeight();
     [[nodiscard]] double getWeight() const;
 
-
-    static void freeMemory()
-    {
-        for (int i = 0; i < count; i++)
-        {
-            delete pComputers[i];
-        }
-    }
+    int getCount () const { return count;}
+    void setCount(int v) {count = v;}
 
     static void banner();
 };
@@ -93,8 +80,7 @@ public:
     Desktop();
     Desktop(const Desktop& other);
     ~Desktop() override;
-    //Desktop& operator=(Desktop&& other) noexcept;
-    //Desktop(Desktop&& other) noexcept ;
+
     void inputData () override;
     void print() override;
 
@@ -126,8 +112,7 @@ public:
     Monoblock();
     Monoblock(const Monoblock& other);
     ~Monoblock() override;
-    //Monoblock(Monoblock&& other) noexcept;
-    //Monoblock& operator=(Monoblock&& other) noexcept;
+
     void inputData() override;
     void print() override;
 
@@ -157,8 +142,7 @@ public:
     PortableDevice();
     PortableDevice(const PortableDevice& other);
     ~PortableDevice() override;
-    //PortableDevice(PortableDevice&& other) noexcept;
-    //PortableDevice& operator=(PortableDevice&& other) noexcept;
+
     void inputData() override;
     void print() override;
 
@@ -191,8 +175,7 @@ public:
     Laptop();
     Laptop(const Laptop &other);
     ~Laptop() override;
-    //Laptop(Laptop&& other) noexcept;
-    //Laptop& operator= (Laptop&& other) noexcept;
+
     void inputData () override;
     void print() override;
 
@@ -214,7 +197,7 @@ public:
 
 
 
-class tabletComputer : public PortableDevice
+class TabletComputer : public PortableDevice
 {
 protected:
     bool hasStylus;                         //наличие стилуса
@@ -222,11 +205,10 @@ protected:
     bool hasGPS;                            //наличие GPS;
     chargingType power;                     //тип зарядки
 public:
-    tabletComputer();
-    tabletComputer(const tabletComputer& other);
-    //tabletComputer(tabletComputer&& other) noexcept;
-    //tabletComputer& operator= (tabletComputer&& other) noexcept;
-    ~tabletComputer() override;
+    TabletComputer();
+    TabletComputer(const TabletComputer& other);
+
+    ~TabletComputer() override;
     void inputData() override;
     void print() override;
 

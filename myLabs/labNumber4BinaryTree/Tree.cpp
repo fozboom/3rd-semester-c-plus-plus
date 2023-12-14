@@ -136,57 +136,72 @@ Tree<T>::Tree()
 {
     root = current = nullptr;
 }
-
 template <typename T>
-void Tree<T>::serializeTree(std::ostream& out, Node<T>* node) try
+void Tree<T>::writeTreeToFile(const char* filename) const
 {
-    if (node == nullptr) {
-        return;
-    }
-    out.write(reinterpret_cast<const char*>(&node->data), sizeof(node->data));
-    serializeTree(out, node->left);
-    serializeTree(out, node->right);
-}catch (std::ios::failure& ex){
-    throw ExceptionFile("Ошибка при сериализации дерева");
-}
+    std::ofstream outFile(filename, std::ios::binary);
 
-
-template <typename T>
-void Tree<T>::deserializeTree(std::istream& in) try
-{
-    T data;
-    if (!in.read(reinterpret_cast<char*>(&data), sizeof(data)))
+    if (!outFile.is_open())
     {
+        std::cerr << "Error opening file: " << filename << std::endl;
         return;
     }
-    push(data);
-    deserializeTree(in);
-    deserializeTree(in);
-}catch (std::ios::failure& ex){
-    throw ExceptionFile("Ошибка при десериализации дерева");
+
+    writeTreeNodeToFile(outFile, root);
+
+    outFile.close();
 }
 
 template <typename T>
-void Tree<T>::writeTreeToFile(const char* filename)
+void Tree<T>::writeTreeNodeToFile(std::ostream& os, Node<T>* node) const
 {
-    std::ofstream file(filename, std::ios::binary);
-
-    if (!file) throw ExceptionFile("Ошибка открытия файла для записи");
-
-    serializeTree(file, root);
-    file.close();
+    if (node)
+    {
+        os.write(reinterpret_cast<const char*>(&node->data), sizeof(T));
+        writeTreeNodeToFile(os, node->left);
+        writeTreeNodeToFile(os, node->right);
+    }
 }
 
 template <typename T>
 void Tree<T>::readTreeFromFile(const char* filename)
 {
-    std::ifstream file(filename, std::ios::binary);
+    std::ifstream inFile(filename, std::ios::binary);
 
-    if (!file) throw ExceptionFile("Ошибка открытия файла для записи");
+    if (!inFile.is_open())
+    {
+        std::cerr << "Error opening file: " << filename << std::endl;
+        return;
+    }
 
-    deserializeTree(file);
-    file.close();
+    clear();
+
+    root = readTreeNodeFromFile(inFile);
+
+    inFile.close();
 }
+
+template <typename T>
+Node<T>* Tree<T>::readTreeNodeFromFile(std::istream& is)
+{
+    T data;
+    is.read(reinterpret_cast<char*>(&data), sizeof(T));
+
+    if (is.eof())
+    {
+        return nullptr;
+    }
+
+    Node<T>* node = new Node<T>(data);
+    node->left = readTreeNodeFromFile(is);
+    node->right = readTreeNodeFromFile(is);
+
+    return node;
+}
+
+
+
+
 
 template <typename T>
 void Tree<T>::clearTree(Node<T>* node) {
@@ -225,5 +240,16 @@ Node<T> *Node<T>::operator++() {
 
 
 
+
+template <typename T>
+Node<T> *Tree<T>::findMimElement (Node<T> *_root) const
+{
+    if (root == nullptr)
+        return nullptr;
+    while (_root->left != nullptr)
+        _root = _root->left;
+
+    return _root;
+}
 
 

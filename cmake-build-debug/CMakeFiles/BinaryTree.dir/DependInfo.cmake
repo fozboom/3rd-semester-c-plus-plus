@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.cpp" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o" "gcc" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o.d"
+  "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Desktop.cpp" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o" "gcc" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o.d"
   "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Exception.cpp" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o" "gcc" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o.d"
   "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Tree.cpp" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o" "gcc" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o.d"
+  "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/functions.cpp" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o" "gcc" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o.d"
   "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/main.cpp" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o" "gcc" "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o.d"
   )
 

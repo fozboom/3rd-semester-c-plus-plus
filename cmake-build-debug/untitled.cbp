@@ -97,46 +97,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Katya">
-				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Katya" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 Katya"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Katya/fast">
-				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Katya" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 Katya/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="LabNumber3">
 				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/LabNumber3" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
@@ -257,6 +217,46 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="container">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/container" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 container"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="container/fast">
+				<Option output="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/container" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 container/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug"/>
 				<Option type="4"/>
@@ -290,18 +290,6 @@
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/LeetCode/mainLeetCode.cpp">
 			<Option target="LeetCode"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/Exceptions.h">
-			<Option target="Katya"/>
-		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/functions.cpp">
-			<Option target="Katya"/>
-		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/functions.h">
-			<Option target="Katya"/>
-		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/Katya/main.cpp">
-			<Option target="Katya"/>
-		</Unit>
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/LabNumber1/employee.cpp">
 			<Option target="LabNumber1"/>
 		</Unit>
@@ -310,6 +298,9 @@
 		</Unit>
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/LabNumber1/mainLab1.cpp">
 			<Option target="LabNumber1"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/ListSTD/main.cpp">
+			<Option target="container"/>
 		</Unit>
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber2 : Mystring/Mystring.cpp">
 			<Option target="LabNumber1"/>
@@ -322,35 +313,47 @@
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber2 : Mystring/mainLab2.cpp">
 			<Option target="LabNumber2"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Computer.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.h">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Computer.h">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Desktop.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Desktop.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Laptop.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Laptop.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Monoblock.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/PortableDevice.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/TabletComputer.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/functions.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/functions.cpp">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/header.h">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/header.h">
 			<Option target="LabNumber3"/>
 		</Unit>
-		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/main.cpp">
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/main.cpp">
 			<Option target="LabNumber3"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Algorithm.h">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.cpp">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.h">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Desktop.cpp">
+			<Option target="BinaryTree"/>
 		</Unit>
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Exception.cpp">
 			<Option target="BinaryTree"/>
@@ -362,6 +365,9 @@
 			<Option target="BinaryTree"/>
 		</Unit>
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Tree.h">
+			<Option target="BinaryTree"/>
+		</Unit>
+		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/functions.cpp">
 			<Option target="BinaryTree"/>
 		</Unit>
 		<Unit filename="/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/main.cpp">

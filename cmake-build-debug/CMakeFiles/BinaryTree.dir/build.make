@@ -111,11 +111,56 @@ CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Exception.cpp -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.s
 
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o: CMakeFiles/BinaryTree.dir/flags.make
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.cpp
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o: CMakeFiles/BinaryTree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o -MF CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o.d -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.cpp
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.cpp > CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.i
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.cpp -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.s
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o: CMakeFiles/BinaryTree.dir/flags.make
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Desktop.cpp
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o: CMakeFiles/BinaryTree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o -MF CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o.d -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Desktop.cpp
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Desktop.cpp > CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.i
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Desktop.cpp -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.s
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o: CMakeFiles/BinaryTree.dir/flags.make
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/functions.cpp
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o: CMakeFiles/BinaryTree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o -MF CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o.d -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/functions.cpp
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/functions.cpp > CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.i
+
+CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/functions.cpp -o CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.s
+
 # Object files for target BinaryTree
 BinaryTree_OBJECTS = \
 "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o" \
 "CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o" \
-"CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o"
+"CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o" \
+"CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o" \
+"CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o" \
+"CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o"
 
 # External object files for target BinaryTree
 BinaryTree_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ BinaryTree_EXTERNAL_OBJECTS =
 BinaryTree: CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Tree.cpp.o
 BinaryTree: CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o
 BinaryTree: CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Exception.cpp.o
+BinaryTree: CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Computer.cpp.o
+BinaryTree: CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/Desktop.cpp.o
+BinaryTree: CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/functions.cpp.o
 BinaryTree: CMakeFiles/BinaryTree.dir/build.make
 BinaryTree: CMakeFiles/BinaryTree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BinaryTree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable BinaryTree"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BinaryTree.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

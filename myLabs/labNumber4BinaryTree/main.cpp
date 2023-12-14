@@ -1,13 +1,19 @@
 #include "Tree.h"
 #include "Tree.cpp"
+#include "Computer.h"
+#include "Algorithm.h"
 
 
 
 int main()
 {
-    Tree<int> tree;
-    int x;
+    Tree<Desktop> tree;
+    Desktop x;
     char choice;
+    bool filterByPrice = true;
+    bool filterByWeight = true;
+    double minWeight = 10, minPrice = 100, maxWeight = 1500, maxPrice = 4000;
+
     while(true)
     {
         std::cout << "\n'a' - добавление"
@@ -15,6 +21,9 @@ int main()
                      "\n'c' - удалить дерево"
                      "\n'r' - прочитать дерево из файла"
                      "\n'w' - записать дерево в файл"
+                     "\n's' - поиск согласно фильтру"
+                     "\n'b' - бинарный поиск"
+                     "\n'e' - кол-во узлов в дереве"
                      "\n'f' - завершить программу"
                      "\nВаш выбор: ";
         std::cin >> choice;
@@ -23,13 +32,13 @@ int main()
             switch (choice)
             {
                 case 'a': {
-                    x = inputNumber();
+                    x.inputData();
                     tree.push(x);
                     tree.print();
                     break;
                 }
                 case 'd': {
-                    x = inputNumber();
+                    x.inputData();
                     tree.pop(x);
                     tree.print();
                     break;
@@ -39,14 +48,45 @@ int main()
                     tree.print();
                     break;
                 }
+                case 'b': {
+                    x.setPrice();
+                    auto result = Algorithm::find(tree.begin(), tree.end(), x);
+                    if(result != tree.end())
+                    {
+                        std::cout << "\nЭлемент есть в дереве\n";
+                    } else {
+                        std::cout << "\nТакого элемента в дереве нету\n";
+                    }
+                    break;
+                }
                 case 'w': {
-                    tree.writeTreeToFile("TREE");
+                    tree.writeTreeToFile("TREE.txt");
                     break;
                 }
                 case 'r': {
                     tree.clear();
-                    tree.readTreeFromFile("TREE");
+                    tree.readTreeFromFile("TREE.txt");
                     tree.print();
+                    break;
+                }
+                case 's':{
+                    Tree<Desktop> filtrationTree;
+                    Algorithm::searchByFiltration(tree.begin(), tree.end(),filtrationTree, [&](const Desktop& object){
+                        bool flag = false;
+                        if(filterByPrice)
+                        {
+                            if (object.getPrice() < maxPrice && object.getPrice() > minPrice)
+                                flag = true;
+                        }
+                        if (filterByWeight)
+                        {
+                            if ((object.getWeight() < maxWeight && object.getWeight() > minWeight) && flag)
+                                flag = true;
+                        }
+                        return flag;
+                    });
+
+                    filtrationTree.print();
                     break;
                 }
                 case 'f': {
@@ -66,5 +106,6 @@ int main()
             exit(EXIT_FAILURE);
         }
     }
+
 
 }

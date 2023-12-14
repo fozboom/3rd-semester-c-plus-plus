@@ -33,22 +33,28 @@ int inputNumber (int start, int finish)
     return number;
 }
 
-double inputDouble (double start, double finish)
-{
+#include <iostream>
+#include <stdexcept>
+
+
+double inputDouble(double start, double finish) {
     double number;
-    while (true)
-    {
-        std::cout << "\nВведите число с плавающей запятой - ";
-        std::cin >> number;
-        if (std::cin.good() && number >= start && number <= finish)
+    while (true) {
+        std::cout << "Введите число с плавающей запятой - ";
+        if (!(std::cin >> number))
         {
-            std::cin.ignore(10, '\n');
-            break;
+            std::cin.clear();
+            std::string line;
+            std::getline(std::cin, line);
+            throw ExceptionInputNumber("Вы ввели не число");
         }
-        std::cin.ignore(10, '\n');
-        std::cout << "\nОшибка ввода числа";
+        if (number < start || number > finish)
+        {
+            std::cout << "Ошибка ввода числа";
+            continue;
+        }
+        return number;
     }
-    return number;
 }
 
 //вычисление длины строки

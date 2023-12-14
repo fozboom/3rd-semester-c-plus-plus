@@ -812,4 +812,7 @@ CMakeFiles/BinaryTree.dir/myLabs/labNumber4BinaryTree/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Tree.cpp
+  /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Tree.cpp \
+  /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Computer.h \
+  /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/header.h \
+  /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber4BinaryTree/Algorithm.h

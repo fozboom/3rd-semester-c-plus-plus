@@ -15,24 +15,20 @@ add_executable(LabNumber2
         "myLabs/labNumber2 : Mystring/mainLab2.cpp"
         "myLabs/labNumber2 : Mystring/Mystring.h"
         "myLabs/labNumber2 : Mystring/Mystring.cpp")
-add_executable(Katya
-        "myLabs/Katya/main.cpp"
-        "myLabs/Katya/functions.cpp"
-        "myLabs/Katya/functions.h"
-        myLabs/Katya/Exceptions.h)
+
 
 add_executable(LabNumber3
-        "myLabs/labNumber3 : inheritance and virtual/main.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/Computer.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/Computer.h"
-        "myLabs/labNumber3 : inheritance and virtual/Desktop.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/header.h"
-        "myLabs/labNumber3 : inheritance and virtual/functions.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp"
-        "myLabs/labNumber3 : inheritance and virtual/Laptop.cpp")
+        "myLabs/labNumber3/main.cpp"
+        "myLabs/labNumber3/Computer.cpp"
+        "myLabs/labNumber3/Computer.h"
+        "myLabs/labNumber3/Desktop.cpp"
+        "myLabs/labNumber3/PortableDevice.cpp"
+        "myLabs/labNumber3/header.h"
+        "myLabs/labNumber3/functions.cpp"
+        "myLabs/labNumber3/Monoblock.cpp"
+        "myLabs/labNumber3/Monoblock.cpp"
+        "myLabs/labNumber3/TabletComputer.cpp"
+        "myLabs/labNumber3/Laptop.cpp")
 
 add_executable(LeetCode
         "LeetCode/mainLeetCode.cpp"
@@ -44,6 +40,14 @@ add_executable(BinaryTree
         myLabs/labNumber4BinaryTree/Tree.h
         myLabs/labNumber4BinaryTree/main.cpp
         myLabs/labNumber4BinaryTree/Exception.cpp
-        myLabs/labNumber4BinaryTree/Exception.h)
+        myLabs/labNumber4BinaryTree/Exception.h
+        myLabs/labNumber4BinaryTree/Computer.h
+        myLabs/labNumber4BinaryTree/Computer.cpp
+        myLabs/labNumber4BinaryTree/Desktop.cpp
+        myLabs/labNumber4BinaryTree/functions.cpp
+        myLabs/labNumber4BinaryTree/Algorithm.h
+)
 
 
+add_executable(container
+        myLabs/ListSTD/main.cpp)

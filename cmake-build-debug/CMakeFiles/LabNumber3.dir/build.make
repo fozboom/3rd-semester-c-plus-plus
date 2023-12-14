@@ -69,140 +69,140 @@ include CMakeFiles/LabNumber3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LabNumber3.dir/flags.make
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/main.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/main.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/main.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/main.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/main.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/main.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/main.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/main.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/Computer.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Computer.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Computer.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Computer.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Computer.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Computer.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/Desktop.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Desktop.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Desktop.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Desktop.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Desktop.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Desktop.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Desktop.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Desktop.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/PortableDevice.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/PortableDevice.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/PortableDevice.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/PortableDevice.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/PortableDevice.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/PortableDevice.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/functions.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/functions.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/functions.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/functions.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/functions.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/functions.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/functions.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/functions.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/Monoblock.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Monoblock.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Monoblock.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Monoblock.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Monoblock.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Monoblock.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/TabletComputer.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/TabletComputer.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/TabletComputer.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/TabletComputer.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/TabletComputer.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/TabletComputer.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.s
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3\ :\ inheritance\ and\ virtual/Laptop.cpp
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o -c "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Laptop.cpp"
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o: CMakeFiles/LabNumber3.dir/flags.make
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o: /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Laptop.cpp
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o: CMakeFiles/LabNumber3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o -MF CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o.d -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o -c /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Laptop.cpp
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Laptop.cpp" > CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.i
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Laptop.cpp > CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.i
 
-CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3 : inheritance and virtual/Laptop.cpp" -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.s
+CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozboom/CLionProjects/3stSemestr/myLabs/labNumber3/Laptop.cpp -o CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.s
 
 # Object files for target LabNumber3
 LabNumber3_OBJECTS = \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o" \
-"CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o"
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o" \
+"CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o"
 
 # External object files for target LabNumber3
 LabNumber3_EXTERNAL_OBJECTS =
 
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/main.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Computer.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Desktop.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/PortableDevice.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/functions.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Monoblock.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/TabletComputer.cpp.o
-LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3___inheritance_and_virtual/Laptop.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/main.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Computer.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Desktop.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/PortableDevice.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/functions.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Monoblock.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/TabletComputer.cpp.o
+LabNumber3: CMakeFiles/LabNumber3.dir/myLabs/labNumber3/Laptop.cpp.o
 LabNumber3: CMakeFiles/LabNumber3.dir/build.make
 LabNumber3: CMakeFiles/LabNumber3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/fozboom/CLionProjects/3stSemestr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable LabNumber3"
